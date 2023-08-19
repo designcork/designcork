@@ -117,7 +117,7 @@ ul {
 }
 
 .logo-box::before {
-    content: url(/images/leevy-logo-yellow-temp.svg);
+    content: url(/images/logo.svg);
     display: block;
     width: 120px;
     margin-top: 30px;
@@ -129,7 +129,7 @@ ul {
 
 
 .logo-footer.logo-box::before {
-    content: url(/images/leevy-logo-temp-white.svg);
+    content: url(/images/logo.svg);
     width: 80px;
     padding: 0;
     margin-top: 14px;
@@ -275,11 +275,11 @@ header {
   }
 
   .dark-color#menuToggle span {
-    background: #023047; transition: all 1s;
+    background: #023047;
   }
 
   .light-color#menuToggle span {
-    background: #fafafa; transition: all 10ms;
+    background: #fafafa !important;
   }
 
 nav {
@@ -469,7 +469,7 @@ a.button {
 }
 
 .outside-link::after {
-    content: url(/images/outside-link-white.svg);
+    content: url(../images/outside-link-white.svg);
     display: inline-block;
     width: 20px;
     cursor: pointer;
