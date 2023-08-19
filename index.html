@@ -18,7 +18,7 @@
         <meta property="og:image:height" content="300">
     </head>
 
-<body>
+<body class="light-background">
     <header class="sticky heroFade">
         <div class="logo-box-show">
             <a href="/index.html">
@@ -80,7 +80,7 @@
                     <li><p>Videography.</p></li>
                     <li><p>One stop shop!</p></li>
                 </ul>
-                <a href="#webdesign" class="button button-arrow  smoothscroll">Get in touch</a></div>
+                <a href="#webdesign" class="button button-arrow smoothscroll">Get in touch</a></div>
         </div>
         
 
@@ -123,14 +123,14 @@
     </div>
 
     <section class="block-white light-background" id="portfolio">
-        <div class="container-short" style="text-align: center;">
+        <div class="container-short light-background" style="text-align: center;">
             <h2 class="fadeUp">Portfolio</h2>
             <h3 class="fadeUpDelayed">Case Studies</h3>
         </div>
             <div class="grid-video fadeUp light-background">
-                <div><div class="photo-container"><img src="/images/portfolio-desmond-bros-1.png" alt="Website Design Cork"></div><a href="https://desmondbros.ie" class="button outside-link" target="_blank" title="Desmond Bros Media">View live website.</a></div>
-                <div><div class="photo-container"><img src="/images/portfolio-leevy-1.png" alt="Cork Irish Web Designer Ireland"></div><a href="http://leevy.ie" class="button outside-link" target="_blank" title="Leevy">View live website.</a></div>
-                <div><div class="photo-container"><img src="/images/portfolio-hearty-coffee-1.png" alt="Brand and Branding for Websites in Cork, Ireland"></div><a href="#contact" class="button outside-link" target="_blank" title="Hearty Coffee">View live website.</a></div>
+                <div><div class="photo-container"><img src="../images/portfolio-desmond-bros-1.png" alt="Website Design Cork"></div><a href="https://desmondbros.ie" class="button outside-link" target="_blank" title="Desmond Bros Media">View live website.</a></div>
+                <div><div class="photo-container"><img src="../images/portfolio-leevy-1.png" alt="Cork Irish Web Designer Ireland"></div><a href="http://leevy.ie" class="button outside-link" target="_blank" title="Leevy">View live website.</a></div>
+                <div><div class="photo-container"><img src="../images/portfolio-hearty-coffee-1.png" alt="Brand and Branding for Websites in Cork, Ireland"></div><a href="#contact" class="button outside-link" target="_blank" title="Hearty Coffee">View live website.</a></div>
             </div>        
     </section>
 
@@ -138,6 +138,7 @@
         <div class="container-short" style="text-align: center;">
             <h2 class="fadeUp">Get in Touch</h2>
             <h3 class="fadeUpDelayed">Send me an email about your project.</h3>
+            <p class="fadeUpDelayed">Email designbycian(at)gmail.com</p>
         </div>
     </section>
     
@@ -175,7 +176,7 @@
 <script>var $ = jQuery;
     $(document).ready(function () {
       var lightPos = [];
-      $(".light-background").each(function () {
+      $(".dark-background").each(function () {
         lightPos.push({
           start: $(this).offset().top,
           end: $(this).offset().top + $(this).height()
@@ -188,11 +189,11 @@
         });
     
         if (isInLight) {
-          $(".menu-btn").addClass("dark-color");
-          $(".menu-btn").removeClass("light-color");
-        } else {
-          $(".menu-btn").removeClass("dark-color");
           $(".menu-btn").addClass("light-color");
+          $(".menu-btn").removeClass("dark-color");
+        } else {
+          $(".menu-btn").removeClass("light-color");
+          $(".menu-btn").addClass("dark-color");
         }
       });
     });</script>
