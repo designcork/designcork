@@ -1,0 +1,88 @@
+.fadeUp {
+opacity: 0;
+transform: translate(0, 40px); transition: all 1.5s;
+
+}
+
+.fadeUpDelayed {
+  opacity: 0;
+  transform: translate(0, 40px); transition: all 1.5s;
+  -webkit-transition-delay: 500ms;
+  -moz-transition-delay: 500ms;
+  -o-transition-delay: 500ms;
+  transition-delay: 500ms;
+  
+}
+
+.fadeUp.visible {
+opacity: 1;
+transform: translate(0, 0); 
+}
+
+.fadeUpDelayed.visible {
+  opacity: 1;
+  transform: translate(0, 0); 
+}
+
+.fadeLeft {
+  opacity: 0;
+  transform: translate(40px, 0); transition: all 1.5s;
+  overflow: hidden;
+}
+
+.fadeLeft.visible {
+  opacity: 1;
+  transform: translate(0, 0); 
+}
+
+.fadeRight {
+  opacity: 0;
+  transform: translate(-40px, 0); transition: all 1.5s;
+}
+
+.fadeRight.visible {
+  opacity: 1;
+  transform: translate(0, 0); 
+}
+
+.heroFade {
+  animation: fadein 2s;
+}
+@keyframes fadein {
+  from { opacity: 0}
+  to   { opacity: 1}
+}
+
+.heroFadeUp {
+  animation: heroFadeUp 2s;
+}
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translate(0, 40px); }
+  to   { opacity: 1; transform: translate(0,0);}
+}
+
+.heroFadeRight {
+  animation: heroFadeRight 2s;
+}
+@keyframes heroFadeRight {
+  from { opacity: 0; transform: translate(-40px, 0); }
+  to   { opacity: 1; transform: translate(0,0);}
+}
+
+.heroFadeDelayed {
+  animation: fadeinDelayed 2s;
+}
+@keyframes fadeinDelayed {
+  from { opacity: 0; transform: translate(0, 40px); }
+  to   { opacity: 1; transform: translate(0,0);}
+}
+
+.truckRoll {
+  opacity: 0;
+  transform: translate(80px, 0); transition: all 1.5s;
+}
+
+.truckRoll.visible {
+  opacity: 1;
+  transform: translate(0, 0); 
+}
