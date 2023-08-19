@@ -693,11 +693,12 @@ a.button {
     flex-grow: 1;
     max-width: 54em;
     grid-template-columns: repeat(1, 1fr);
+    overflow: hidden;
 }
 
 .grid-two img {
     object-fit: contain;
-    max-width: 100%;
+    width: 100%;
 }
 
 .grid-video {
@@ -802,6 +803,7 @@ a.button {
 .album-art {
     margin: auto;
     box-shadow: rgba(0, 0, 0, .8) 0px 30px 90px;
+    overflow: hidden;
 }
 
 .spotify {
@@ -1027,6 +1029,7 @@ a.button {
         flex-grow: 1;
         max-width: 54em;
         grid-template-columns: repeat(2, 1fr);
+        overflow: visible;
     
     }
 
