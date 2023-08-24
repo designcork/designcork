@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --primary-colour: #0A2342;
+    --secondary-colour: #FCBF49;
+    --highlight-colour: #D62828;
+    --white-colour: #FAFAFA;
+  }
+
+
 html {
     margin:    0 auto;
     max-width: 3000px;
@@ -8,8 +16,8 @@ html {
 body  {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
-    color: #1F4D7A;
+    background: var(--white-colour);
+    color: var(--primary-colour);
 }
 
 input,
@@ -40,7 +48,7 @@ h1 {
 
 h1 span {
     text-decoration: underline;
-    text-decoration-color: #F7D675;
+    text-decoration-color: var(--highlight-colour);
     text-decoration-thickness: 8px;
 }
 
@@ -51,13 +59,13 @@ h2 {
 
 h2 span {
     text-decoration: underline;
-    text-decoration-color: #F7D675;
+    text-decoration-color: var(--highlight-colour);
     text-decoration-thickness: 4px;
 }
 
 h3 {
     line-height: 1em;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 300;    
 }
 
@@ -68,7 +76,7 @@ h3 {
 
 p span {
     text-decoration: underline;
-    text-decoration-color: #F7D675;
+    text-decoration-color: var(--highlight-colour);
     text-decoration-thickness: 2px;
 }
 
@@ -102,7 +110,7 @@ ul {
 }
 
 .logo-box-show {
-    opacity: 0;
+    opacity: 1;
     transition: 400ms ease-in-out;
 }
 
@@ -117,9 +125,9 @@ ul {
 }
 
 .logo-box::before {
-    content: url(/images/logo.svg);
+    content: url(/images/paprika-wordmark-black.svg);
     display: block;
-    width: 120px;
+    width: 220px;
     margin-top: 30px;
     margin-left: 5px;
     padding-left: 20px;
@@ -170,8 +178,8 @@ header {
     left: 0;
     width: 100%;
     z-index: 5;
-    background-color: transparent;
     overflow: hidden;
+    background-color: var(--secondary-colour);
 }
 
 .menu {
@@ -211,7 +219,7 @@ header {
     height: 3px;
     margin-bottom: 5px;
     position: relative;
-    background: #1F4D7A;
+    background: var(--primary-colour);
     border-radius: 1px;
     z-index: 50;
     transform-origin: 5px 0px;
@@ -233,7 +241,7 @@ header {
   {
     opacity: 1;
     transform: rotate(405deg) translate(2px, 3px);
-    background: #fafafa;
+    background: var(--white-colour);
   }
   
   #menuToggle input:checked ~ span:nth-last-child(2)
@@ -275,11 +283,11 @@ header {
   }
 
   .dark-color#menuToggle span {
-    background: #023047;
+    background: var(--primary-colour);
   }
 
   .light-color#menuToggle span {
-    background: #fafafa !important;
+    background: var(--white-colour) !important;
   }
 
 nav {
@@ -297,8 +305,8 @@ nav {
     right: 0;
     top: 0;
     bottom: 0;
-    background: #1F4D7A;
-    color: #fafafa;
+    background: var(--primary-colour);
+    color: var(--white-colour);
     z-index: 7;
     text-align: left;
     padding-top: 100px;
@@ -339,12 +347,12 @@ nav ul li a {
     text-align: left;
     font-weight: 600;
     font-size: 1.8em; 
-    color: #fafafa;
+    color: var(--white-colour);
 
 }
 
 nav ul li a:hover {
-    color: #fbbd15;
+    color: var(--secondary-colour);
 
 }
 
@@ -370,8 +378,8 @@ a img {
 a.button {
     text-align: center;
     text-decoration: none;
-    color: #fafafa;
-    background-color: #1F4D7A;
+    color: var(--primary-colour);
+    background-color: var(--secondary-colour);
     padding: 10px 30px;
     border-radius: 5px;
     margin: 0 auto auto auto;
@@ -380,7 +388,7 @@ a.button {
   transition: 0.4s ease;
   text-shadow:  none;
   font-weight: 400;
-  border-color: #1F4D7A;
+  border-color: var(--secondary-colour);
   border-width: 1px;
   border-style: solid;
   cursor: pointer;
@@ -390,15 +398,15 @@ a.button {
     transform: translateY(-5px);
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
-  background-color: #fafafa;
-  color: #1F4D7A;
-  border-color: #1F4D7A;
+  background-color: var(--white-colour);
+  color: var(--primary-colour);
+  border-color: var(--primary-colour);
 }
 
 .button.button-white {
-    background-color: #fafafa;
-    color: #1F4D7A;
-    border-color: whitesmoke;
+    background-color: var(--white-colour);
+    color: var(--primary-colour);
+    border-color: var(--white-colour);
     border-width: 0.2px;
     border-style: solid;
 }
@@ -407,9 +415,9 @@ a.button {
     transform: translateY(-5px);
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
-  background-color: #1F4D7A;
-  color: #fafafa;
-  border-color: #fafafa;
+  background-color: var(--primary-colour);
+  color: var(--white-colour);
+  border-color: var(--white-colour);
 }
 
 .button-arrow {
@@ -448,9 +456,18 @@ a.button {
     -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
   }
+
+  .button-white.button-contact:hover:after {
+    content: url(../images/paperplane.svg);
+}
+
+  .button-white.button-contact::after {
+    content: url(../images/paperplane-blue.svg);
+  }
+
   
   .button-contact::after{
-      content: url(../images/paperplane.svg);
+      content: url(../images/paperplane-white.svg);
       display: inline-block;
       width: 14px;
       cursor: pointer;
@@ -461,8 +478,8 @@ a.button {
     -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
   }
-  .button-contact:hover:after {
-    content: url(../images/paperplane-blue.svg);
+  .button-contact:hover::after {
+    content: url(../images/paperplane-white.svg);
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   transform: translate(6px, -8px);
@@ -490,8 +507,18 @@ a.button {
 
 
 .block-white {
-    background: #fafafa;
-    color: #1F4D7A;
+    background: var(--white-colour);
+    color: var(--primary-colour);
+    text-align: left;
+    padding: 1em 0 1em 0;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10em;
+}
+
+.block-red {
+    background:var(--white-colour);
+    color: #D62828;
     text-align: left;
     padding: 1em 0 1em 0;
     align-items: center;
@@ -519,11 +546,11 @@ a.button {
 
 .block-blue {
     background-color: #1F4D7A;
-    color: #fafafa;
+    color: var(--white-colour);
 }
 
 .block-yellow {
-    background-color: #F7D675;
+    background-color: var(--secondary-colour);
 }
 
 
@@ -533,7 +560,7 @@ a.button {
 
 .block-orange {
     background-color: #B56E28;
-    color: #fafafa;
+    color: var(--white-colour);
 }
 
 .image-holder {
@@ -557,6 +584,7 @@ a.button {
     text-align: center;
     top: 0;
     max-width: 100%;
+    background-color: var(--secondary-colour);
 }
 
 .hero-image-template+.hero-image img {
@@ -601,7 +629,6 @@ a.button {
     z-index: 1;
     text-decoration: none;
     width: 100%;
-    color: #1F4D7A;
     top: 30%;
 }
 
@@ -616,7 +643,6 @@ a.button {
     bottom: 10%;
     z-index: 0;
     padding-bottom: 0;
-    color: #1F4D7A;
 }
 
 .overlay-text-right {
@@ -822,7 +848,7 @@ a.button {
 }
 
 .tour-container {
-    background-color: #fafafa;
+    background-color: var(--white-colour);
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -877,8 +903,8 @@ a.button {
 
 .card {
     display: block;
-    color: #1F4D7A;
-    background-color: #fafafa;
+    color: var(--primary-colour);
+    background-color: var(--white-colour);
     box-shadow: rgba(0, 0, 0, .2) 0px 3px 12px;
     border-radius: 10px;
     padding: 1em;
@@ -890,9 +916,9 @@ a.button {
 .card h2 {
     font-size: 1.4em;
     font-weight: 400;
-    color: #1F4D7A;
+    color: var(--primary-colour);
     text-decoration: underline;
-    text-decoration-color: #F7D675;
+    text-decoration-color: var(--highlight-colour);
     text-decoration-thickness: 4px;
 }
 
@@ -911,8 +937,8 @@ a.button {
 .footer {
     width: 100%;
     height: auto;
-    background-color: #fafafa;
-    color: #1F4D7A;
+    background-color: var(--white-colour);
+    color: var(--primary-colour):
     padding: 1em 0 4em 0;
     margin: 0 auto 0 auto;
 }
@@ -946,7 +972,7 @@ a.button {
 
 .footer a:hover {
     text-decoration: underline;
-    text-decoration-color: #F7D675;
+    text-decoration-color: var(--highlight-colour);
     text-decoration-thickness: 4px;
 }
 
@@ -977,8 +1003,8 @@ a.button {
     }
 
     .sticky {
-        position: absolute;
         color: #fafafa;
+        background-color: var(--secondary-colour);
     }
 
     
@@ -1000,6 +1026,7 @@ a.button {
     
     h1 {
         font-size: 3.6em;
+        font-weight: 600;
     }
     
     h2 {
@@ -1099,7 +1126,7 @@ a.button {
         transition: transform .5s;
         border-radius: 5px;
 
-        background-color: #fbbd15;
+        background-color: var(--secondary-colour);
         color: white;
         cursor: pointer;
       }
@@ -1122,7 +1149,7 @@ a.button {
         height: 2px;
         bottom: 10px;
         left: 25%;
-        background-color: #fbbd15;
+        background-color: var(--highlight-colour);
         transform-origin: bottom right;
         transition: transform 0.25s ease-out;
       }
@@ -1133,7 +1160,7 @@ a.button {
       }
 
       .button-menu {
-        background-color: #fbbd15;
+        background-color: var(--secondary-colour);
         color: white;
         position: relative;
         display: inline-block;
@@ -1158,7 +1185,7 @@ a.button {
       }
 
     nav ul li a {
-        color: #1F4D7A;
+        color: var(--primary-colour);
         background-color: inherit;
         text-align: center;
         padding-bottom: 10px;
@@ -1170,7 +1197,7 @@ a.button {
 
     nav ul li a:hover {
         background-color: inherit;
-        color: #1F4D7A;
+        color: var(--primary-colour);
     
     }
 
