@@ -1065,6 +1065,7 @@ z-index: 2;
     clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 100%);
     bottom: 0;
     z-index: 2;
+    transform: scale(1) translateY(1px);
   }
 
   .divider-home {
