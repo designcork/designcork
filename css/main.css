@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900;1000&display=swap');
 
 :root {
     --primary-colour: #0A2342;
-    --secondary-colour: #FCBF49;
+    --secondary-colour: #FFC52B;
     --highlight-colour: #D62828;
-    --white-colour: #FAFAFA;
+    --white-colour: #FFFAFA;
   }
 
 
@@ -15,7 +18,7 @@ html {
 
 body  {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Alegreya', sans-serif;
     background: var(--white-colour);
     color: var(--primary-colour);
 }
@@ -27,6 +30,8 @@ select,
 a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   cursor: pointer;
+  color: inherit;
+  font-family: inherit;
 }
 
 
@@ -39,11 +44,12 @@ p {
     font-size: 1em;
     line-height: 1.4em;
     font-weight: 300;
+    font-family: 'DM Sans';
 }
 
 h1 {
     font-weight: 500;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 h1 span {
@@ -67,6 +73,10 @@ h3 {
     line-height: 1em;
     font-size: 1em;
     font-weight: 300;    
+}
+
+h3 span {
+    font-weight: 600;
 }
 
 .home-text h3 {
@@ -107,6 +117,7 @@ ul {
     position: relative;
     max-width: 100%;
     margin-right: 10px;
+    z-index: 7;
 }
 
 .logo-box-show {
@@ -120,8 +131,16 @@ ul {
 }
 
 
-.logo-box:hover {
-    opacity: 80%;
+.logo-box:hover::before {
+    border-bottom: 2px;
+    border-radius: 10px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: var(--highlight-colour);
+    border-top: rgba(0,0,0,0);
+    border-left: rgba(0,0,0,0);
+    border-right: rgba(0,0,0,0);
+    
 }
 
 .logo-box::before {
@@ -133,6 +152,15 @@ ul {
     padding-left: 20px;
     cursor: pointer;
     z-index: 10;
+    border-bottom: 2px;
+    border-radius: 10px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0);
+    border-top: rgba(0,0,0,0);
+    border-left: rgba(0,0,0,0);
+    border-right: rgba(0,0,0,0);
+
 }
 
 
@@ -311,6 +339,7 @@ nav {
     text-align: left;
     padding-top: 100px;
     height: 100%; 
+    font-family: 'DM Sans';
 
 }
 
@@ -387,15 +416,16 @@ a.button {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   text-shadow:  none;
-  font-weight: 400;
+  font-weight: 600;
   border-color: var(--secondary-colour);
   border-width: 1px;
   border-style: solid;
   cursor: pointer;
+  font-size: 1.2em;
 }
 
 .button:hover{
-    transform: translateY(-5px);
+    /*transform: translateY(-5px); */
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   background-color: var(--white-colour);
@@ -406,13 +436,12 @@ a.button {
 .button.button-white {
     background-color: var(--white-colour);
     color: var(--primary-colour);
-    border-color: var(--white-colour);
+    border-color: var(--primary-colour);
     border-width: 0.2px;
     border-style: solid;
 }
 
 .button-white:hover{
-    transform: translateY(-5px);
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   background-color: var(--primary-colour);
@@ -426,7 +455,7 @@ a.button {
   }
   
   .button-arrow::after{
-      content: url(../images/arrow-small-light-white.svg);
+      content: url(../images/arrow-small-light-blue.svg);
       display: inline-block;
       width: 14px;
       cursor: pointer;
@@ -542,10 +571,15 @@ a.button {
     align-items: center;
     text-align: left;
     justify-content: center;
+    border-radius: 4px;
+}
+
+.block-margins {
+    margin: 1em auto 1em auto;
 }
 
 .block-blue {
-    background-color: #1F4D7A;
+    background-color: var(--primary-colour);
     color: var(--white-colour);
 }
 
@@ -579,12 +613,14 @@ a.button {
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    width: 100%;
+    min-height: 77vh;
     background-position: center;
     text-align: center;
     top: 0;
     max-width: 100%;
     background-color: var(--secondary-colour);
+    overflow: hidden;
 }
 
 .hero-image-template+.hero-image img {
@@ -624,12 +660,11 @@ a.button {
 }
 
 .home-text {
-    position: absolute;
-    text-align: center;
+    text-align: left;
     z-index: 1;
     text-decoration: none;
     width: 100%;
-    top: 30%;
+    margin-top: 10%;
 }
 
 .home-text h3 {
@@ -638,11 +673,8 @@ a.button {
 
 .home-text-lower {
     width: 100%;
-    position: absolute;
-    text-align: center;
-    bottom: 10%;
-    z-index: 0;
-    padding-bottom: 0;
+    position: relative;
+    text-align: left;
 }
 
 .overlay-text-right {
@@ -753,6 +785,10 @@ a.button {
     object-fit: contain;
 }
 
+.image-link:hover {
+    opacity: .8;
+}
+
 .item-wrap {
     overflow: hidden;
     position: relative; 
@@ -760,6 +796,18 @@ a.button {
    height: 300px;
    width: 100%;
 }
+
+.portfolio-item {
+    padding: 1em;
+}
+
+.item-wrap a img {
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
 
 .portfolio-item .overlay-lower {
     position: absolute;
@@ -775,12 +823,24 @@ a.button {
 
  .portfolio-item .portfolio-item-meta { 
     position: absolute;
-    bottom: 25%;
+    bottom: 5%;
     left: 5%;
     transform: translate(0, 20px); 
     transition: all .3s;
 
 }
+
+.portfolio-item-meta a{
+    color: initial;
+}
+
+.portfolio-item-meta a:hover {
+    text-decoration: underline;    
+}
+
+.portfolio-item:hover .item-wrap .portfolio-item-meta {
+    text-decoration: underline;
+  }
 
 .portfolio-item:hover .item-wrap img {
 
@@ -827,10 +887,12 @@ a.button {
   }
 
 .album-art {
-    margin: auto;
-    box-shadow: rgba(0, 0, 0, .8) 0px 30px 90px;
-    overflow: hidden;
+    box-sizing: content-box;
+    box-shadow: rgba(0, 0, 0, .8) 0px 30px 30px;
+    max-width: 100%;
+    align-self: center;
 }
+
 
 .spotify {
     display: flex;
@@ -927,6 +989,11 @@ a.button {
     padding-left: 1em;
 }
 
+.accordion-content ul {
+    list-style: square;
+    padding-left: 1em;
+}
+
 
 
 
@@ -938,8 +1005,8 @@ a.button {
     width: 100%;
     height: auto;
     background-color: var(--white-colour);
-    color: var(--primary-colour):
-    padding: 1em 0 4em 0;
+    color: var(--primary-colour);
+    padding: 2em 0 4em 0;
     margin: 0 auto 0 auto;
 }
 
@@ -973,7 +1040,7 @@ a.button {
 .footer a:hover {
     text-decoration: underline;
     text-decoration-color: var(--highlight-colour);
-    text-decoration-thickness: 4px;
+    text-decoration-thickness: 2px;
 }
 
 .copyright {
@@ -981,6 +1048,80 @@ a.button {
     font-weight: 500;
     font-size: .8em;
 }
+
+.divider-holder {
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+background-color: inherit;
+bottom: 0;
+z-index: 2;
+}
+
+.divider-clipped {
+    height: 100px;
+    width: 100%;
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 100%);
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 100%);
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .divider-home {
+    background-color: var(--white-colour);
+    position: absolute;
+  }
+
+  .divider-white {
+    background-color: var(--white-colour);
+  }
+
+  .divider-yellow {
+    background-color: var(--secondary-colour);
+  }
+
+
+  
+
+button.accordion {
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    color: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    background-color: var(--white-colour);
+  }
+  
+  button.accordion:before {
+    content: "+";
+    font-size: 48px;
+    float: left;
+    transition: 0.2s ease-in-out;
+    font-weight: 600;
+    margin: auto 1em auto 0;
+    display: flex;
+  align-items: center;
+  }
+  
+  button.accordion.is-open:before {
+    transform: rotate(90deg);
+    transition: 0.2s ease-in-out;
+  }
+  
+  button.accordion:hover,
+  button.accordion.is-open {
+    background-color: #ddd;
+  }
+  
+  .accordion-content {
+    padding: 0 20px 20px 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+  }
 
 
 @media only screen and (min-width: 650px) { 
@@ -1093,7 +1234,8 @@ a.button {
         padding-right: 0;
         margin: 0;
         width: 100%;
-        text-transform: lowercase;
+        text-transform: uppercase;
+        
         
     }
 
@@ -1190,7 +1332,7 @@ a.button {
         text-align: center;
         padding-bottom: 10px;
         margin-bottom: 0;
-        font-weight: 300;
+        font-weight: 600;
         font-size: 1em; 
         padding-top: 1em;
     }
