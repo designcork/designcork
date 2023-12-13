@@ -130,19 +130,6 @@ ul {
     transition: 400ms ease-in-out;
 }
 
-
-.logo-box:hover::before {
-    border-bottom: 2px;
-    border-radius: 10px;
-    border-width: 6px;
-    border-style: solid;
-    border-color: var(--highlight-colour);
-    border-top: rgba(0,0,0,0);
-    border-left: rgba(0,0,0,0);
-    border-right: rgba(0,0,0,0);
-    
-}
-
 .logo-box::before {
     content: url(/images/paprika-wordmark-black.svg);
     display: block;
@@ -371,7 +358,6 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     display: block;
-    width: 100%;
     padding: .8em 10px;
     text-align: left;
     font-weight: 600;
@@ -623,6 +609,11 @@ a.button {
     overflow: hidden;
 }
 
+.hero-image-template.bg-white {
+    background-color: var(--white-colour);
+    color: var(--primary-colour);
+}
+
 .hero-image-template+.hero-image img {
     object-fit: contain;
     object-position: center;
@@ -767,6 +758,23 @@ a.button {
     max-width: 80%;
     grid-template-columns: repeat(1, 1fr);
     margin: 0 auto 0 auto;
+}
+
+.grid-book {
+    display: grid;
+    gap: 10px;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto 0 auto;
+    
+}
+
+.grid-book img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .photo-container {
@@ -1100,7 +1108,7 @@ button.accordion {
     content: "+";
     font-size: 48px;
     float: left;
-    transition: 0.2s ease-in-out;
+    transition: 0.6s ease-in-out;
     font-weight: 600;
     margin: auto 1em auto 0;
     display: flex;
@@ -1109,19 +1117,23 @@ button.accordion {
   
   button.accordion.is-open:before {
     transform: rotate(90deg);
-    transition: 0.2s ease-in-out;
+    transition: 0.6s ease-in-out;
   }
   
   button.accordion:hover,
   button.accordion.is-open {
-    background-color: #ddd;
+    background-color: none;
   }
   
   .accordion-content {
     padding: 0 20px 20px 0;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-in-out;
+    transition: max-height 0.6s ease-in-out;
+  }
+
+  .carbonbadge {
+    margin-left: 0;
   }
 
 
@@ -1140,6 +1152,16 @@ button.accordion {
         -webkit-box-flex: 1;
         flex-grow: 1;
         max-width: 1000px;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto 0 auto;
+    }
+
+    .grid-book {
+        display: grid;
+        gap: 20px;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        max-width: 1200px;
         grid-template-columns: repeat(2, 1fr);
         margin: 0 auto 0 auto;
     }
@@ -1287,14 +1309,18 @@ button.accordion {
       .hover-underline::after {
         content: '';
         position: absolute;
-        width: 50%;
+        width: 90%;
         transform: scaleX(0);
-        height: 2px;
-        bottom: 10px;
-        left: 25%;
+        height: 12%;
+        bottom: 5%;
+        left: 5%;
         background-color: var(--highlight-colour);
         transform-origin: bottom right;
         transition: transform 0.25s ease-out;
+      }
+
+      .logo-box-show .hover-underline::after {
+        height: 4%;
       }
       
       .hover-underline:hover::after {
@@ -1331,11 +1357,10 @@ button.accordion {
         color: var(--primary-colour);
         background-color: inherit;
         text-align: center;
-        padding-bottom: 10px;
         margin-bottom: 0;
         font-weight: 600;
         font-size: 1em; 
-        padding-top: 1em;
+        padding: 0;
     }
 
     nav ul li a:hover {
