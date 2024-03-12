@@ -99,10 +99,12 @@ transform: translate(0, 0);
 
 .heroShapeFade {
   animation: heroShapeFade 3s;
+  overflow: hidden;
 }
 
 .shapeFade {
   animation: heroShapeFade 0%;
+  overflow: hidden;
 }
 
 .shapeFade.visible {

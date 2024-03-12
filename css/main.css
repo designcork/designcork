@@ -18,13 +18,15 @@
 html {
     margin: 0;
     max-width: 3000px;
+    background-color: var(--white-colour);
 }
 
 body  {
     font-family: var(--primary-font), sans-serif;
     background: var(--white-colour);
     color: var(--primary-colour);
-    margin: 0px; padding: 0px
+    margin: 0px; padding: 0px;
+    background-color: var(--white-colour);
 }
 
 input,
@@ -207,9 +209,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 5;
+    z-index: 50;
     overflow: hidden;
-    background-color: var(--secondary-colour);
 }
 
 .menu {
@@ -219,6 +220,7 @@ header {
 }
 
 #menuToggle {
+    mix-blend-mode: difference;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -250,6 +252,7 @@ header {
     margin-bottom: 5px;
     position: relative;
     background: var(--black-colour);
+    outline: var(--white-colour);
     border-radius: 2px;
     z-index: 50;
     transform-origin: 5px 0px;
@@ -271,6 +274,7 @@ header {
     font-family: var(--secondary-font);
     transform: translate(0,-20px);
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    outline-width: 0px;
   }
   
   
@@ -343,6 +347,11 @@ header {
 
   .light-color#menuToggle span {
     background: var(--white-colour) !important;
+  }
+
+  .light-color#menuToggle span.toggle-text {
+    color: var(--white-colour);
+    background-color: transparent !important;
   }
 
 nav {
@@ -442,6 +451,7 @@ nav ul li a {
     height: 100vh;
     scroll-behavior: smooth;
     transition: scroll-behaviour 20s;
+    background-color: var(--white-colour);
 }
 
 
@@ -451,6 +461,7 @@ nav ul li a {
   flex: none;
   position: relative;
   scroll-snap-stop: always;
+  background-color: var(--white-colour);
 }
 
 :root::-webkit-scrollbar{
@@ -568,12 +579,12 @@ a.button {
 }
 
   .button-white.button-contact::after {
-    content: url(../images/paperplane-blue.svg);
+    content: url(../images/paperplane-black.svg);
   }
 
   
   .button-contact::after{
-      content: url(../images/paperplane-white.svg);
+      content: url(../images/paperplane.svg);
       display: inline-block;
       width: 14px;
       cursor: pointer;
@@ -585,7 +596,7 @@ a.button {
     transition: 0.4s ease;
   }
   .button-contact:hover::after {
-    content: url(../images/paperplane-white.svg);
+    content: url(../images/paperplane.svg);
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   transform: translate(6px, -8px);
@@ -706,6 +717,7 @@ a.button {
     width: 80%;
     margin: 0;
     border-radius: 0px 8px 8px 0px;
+    overflow: hidden;
 }
 
 .block-photo.stick-right {
@@ -714,6 +726,7 @@ a.button {
     width: 80%;
     margin: 0;
     border-radius: 8px 0px 0px 8px;
+    overflow: hidden;
 }
 
 .block-photo-text {
@@ -772,8 +785,9 @@ a.button {
 
 .carousel {
     background: #EEE;
-    height: 80vh;
+    height: 100%;
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     
   }
@@ -898,7 +912,7 @@ a.button {
     background-color: var(--white-colour);
     color: var(--primary-colour);
     padding: 0.2em 2em 1em 2em;
-    border-radius: 8px 8px 0 0;
+    border-radius: 4px 0px 0 0;
     z-index: 5;
     font-family: var(--secondary-font), sans-serif;
     font-weight: 600;
@@ -907,6 +921,23 @@ a.button {
     transition: all .2s;
     transform: translateY(10px);
     overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--black-colour);
+}
+
+.scroll-down::after{
+    content: url(../images/arrow-small-light.svg);
+    display: inline-block;
+    width: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: none;
+    margin: 0 0 0 8px;
+    align-items: center;  
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  rotate: 90deg;
 }
 
 .scroll-down:hover {
@@ -914,6 +945,10 @@ a.button {
     color: var(--white-colour);
     transition: all .2s;
     transform: translateY(0);
+}
+
+.scroll-down:hover::after {
+    content: url(../images/arrow-small-light-white.svg);
 }
 
 .contact-ribbon {
@@ -936,6 +971,53 @@ a.button {
 .contact-ribbon:hover {
     transform: translate(0);
     transition: all .2s;
+    background-color: var(--white-colour);
+    color: var(--black-colour);
+}
+
+.ribbon-to-top {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 10%;
+    right: 10px;
+    font-size: 1.2em;
+    font-family: var(--secondary-font);
+    font-weight: 900;
+    z-index: 10;
+    background-color: var(--black-colour);
+    color: var(--white-colour);
+    transition: all .2s;
+    cursor: pointer;
+    border-radius: 50%;
+    border: #000;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.ribbon-to-top::after {
+    content: url(../images/arrow-small-light-white.svg);
+    display: inline-block;
+    width: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: none;
+    margin: 30%;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    rotate: -90deg;    
+}
+
+.ribbon-to-top:hover {
+    transform: translate(0);
+    transition: all .2s;
+    background-color: var(--white-colour);
+    color: var(--black-colour);
+}
+
+.ribbon-to-top:hover::after{
+    content: url(../images/arrow-small-light.svg);
+    transform: translate(4px);
 }
 
 .overlay-text-right {
@@ -1536,6 +1618,8 @@ button.accordion {
   }
 
 
+
+
 @media only screen and (min-width: 650px) { 
     .hide-desktop {
         display: none;
@@ -1563,11 +1647,6 @@ button.accordion {
         max-width: 1200px;
         grid-template-columns: repeat(2, 1fr);
         margin: 0 auto 0 auto;
-    }
-
-    .sticky {
-        color: #fafafa;
-        background-color: var(--secondary-colour);
     }
 
     button.accordion:before {
@@ -1787,6 +1866,10 @@ button.accordion {
     
     }
 
+    #menuToggle {
+        margin-right: 20px;
+    }
+
     #menuToggle span{
         display: none;
     }
@@ -1864,6 +1947,9 @@ button.accordion {
         font-size: .8em;
     }
     
+    .sticky.sticky-mobile {
+        position: relative;
+    }
 
 
 
