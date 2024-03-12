@@ -8,6 +8,7 @@
         <link rel="icon" sizes="72x72" href="images/favicon.png">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/fadein.css">
+        <link rel="stylesheet" href="/css/flickity.min.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <meta name="site_name" property="og:site_name" content="Paprika Creative">
         <meta property="og:title" content="Paprika Creative | Web Design, Brand Design in Cork">
@@ -22,194 +23,173 @@
         <meta name="theme-color" content="#FFC52B">
     </head>
 
-<body class="light-background">
-    <header class="block-yellow heroFade">
+<body>
+    <a href="#contact" class="contact-ribbon heroFade">get in touch</a>
+<div class="container-scroll">
+    <div class="scroll-snap-start light-background">
+    <header class="heroFade">
         <div class="logo-box-show">
             <a href="/index.html" class="hover-underline">
-                <div class="logo-box"></div>
+                <div></div>
             </a>
         </div>
         <nav>
             <div id="menuToggle" class="menu-btn menuToggle">
                 <input type="checkbox" class="toggle" name="menuTog">
-                <span></span>
-                <span></span>
+                <span class="toggle-1"></span>
+                <span class="toggle-text">menu</span>
+                <span class="toggle-2"></span>
+                <span class="toggle-close">close</span>
                 
 
                 <ul class="show-desktop hide-mobile" id="nav">
-                    <li><a href="#webdesign" class="hover-underline smoothscroll">web design</a></li>                    
-                    <li><a href="#brand" class="hover-underline smoothscroll">brand identity</a></li>
+                    <li><a href="#webdesign" class="hover-underline ">web design</a></li>                    
+                    <li><a href="#brand" class="hover-underline ">brand identity</a></li>
                     <li><a href="/book-design-ireland.html" class="hover-underline">book design</a></li>
-                    <li><a href="#contact" class="hover-underline smoothscroll">contact</a></li>
+                    <li><a href="#contact" class="hover-underline ">contact</a></li>
+                    <li><div class="logo-box hide-desktop"></div></li>
                 </ul>
             </div>
         </nav>
     </header>
-
-    <div class="hero-image-template heroFade" id="top">
-       
-        
-        <div class="home-text">
-            <div class="container-short">
-                <h1 class="heroFadeUp">Inject some <span>flavour</span> into your brand.</h1>
+        <div class="hero-image-template bg-white heroFade" id="top">
+            <div class="hero-carousel photo-carousel-holder heroShapeFade">
+                
+                <div class="carousel" data-flickity='{"autoPlay": 6200,  "imagesLoaded": true, "percentPosition": true, "wrapAround": true, "pauseAutoPlayOnHover": false, "fullscreen": true, "setGallerySize": false, "pageDots": false, "prevNextButtons": false }'>
+                    <img alt="Irish creative agency production company" src="images/portfolio-website-design-Leevy-iPhone-Mockup.webp" height="200" loading="lazy">
+                    <img alt="Irish creative agency production company" src="images/portfolio-website-design-Castlefreke-Laptop.webp" height="200" loading="lazy">
+                    <img alt="Ireland creative agency" src="images/portfolio-website-design-Desmond-Bros-Laptop-Mockup.webp" height="200" loading="lazy">
+                  </div>
+                  <div class="bg-overlay"></div>
             </div>
-        </div>
-
-        <div class="home-text-lower light-background heroFadeDelayed">
-            <div class="container-short">
-            <p>Paprika helps small businesses to <span>bring their brand to life</span>. </p>
-            <p>Based in Cork, we work with brands to re-invent themselves with modern, effective design.</p>
-            <a href="#contact" class="button button-white smoothscroll button-contact">Want to chat?</a> 
-            </div>
-        </div>
-    </div>
-    <div class="block-yellow heroFade"> <div class="divider-clipped divider-white"></div></div>
-    
-    <div class="block-half block-white">
-        <div class="container-short fadeUp"><h1>We bring <span>creativity</span><br>to everything we do.</h1></div>
-    </div>
-    <div class="block-yellow" style="transform: rotate(180deg);"> <div class="divider-clipped divider-white"></div></div>
-    <div class="block-half block-yellow">
-        <div class="container-short fadeUp"><h1>Telling your story with <span>heart</span>.</h1></div>
-    </div>
-    <div class="block-yellow"> <div class="divider-clipped divider-white"></div></div>
-
-    <div class="container-short light-background">
-        <div class="fadeUp">
-            <button class="accordion"><h2 class="hover-underline">Website Design and Development</h2></button>
-            <div class="accordion-content">
-                <p>Present your brand to the world with a clean, fresh, functional website.</p>
-                <p>Custom built from scratch for your unique needs, by a Cork based design team. We can guide you through the entire process from start to finish, to give your Cork company a brand new website!</p>
-                <p>Government grants are available to support small businesses.</p>
-                <a href="#contact" class="button button-yellow button-arrow smoothscroll">Get in touch.</a> 
-            </div>
-        </div>
-      
-        <div class="fadeUp">
-            <button class="accordion"><h2 class="hover-underline">Brand Identity</h2></button>
-            <div class="accordion-content">
-            <p>Bring your business to the next level. Let's discover your core values and goals together. We want your brand identity to be more than just a pretty face.  Let's make it meaningful too.
-                We work with Cork businesses to create stunning brand identities. Not sure what a brand identity is? Just ask, we'd be happy to have a chat!
-            </p>
-            <a href="#contact" class="button button-yellow button-arrow smoothscroll">Let's chat.</a>
-            </div>
-        </div>
-      
-        <div class="fadeUp">
-            <button class="accordion"><h2 class="hover-underline">Digital Marketing</h2></button>
-            <div class="accordion-content">
-                <p>Digital marketing strategy with high quality media to stand out from the crowd. We provide digital marketing services to businesses and organisations in Cork.</p>
-                <a href="#contact" class="button button-yellow button-arrow smoothscroll">Get started.</a>
-            </div>
-        </div>
-        </div>
-
-
-
-    <div class="block-half block-yellow block-margins container-short light-background fadeUp rounded" id="webdesign">
-                <div class="fadeUpDelayed" style="padding: 0 2em 0 2em;">        
-                    <h2 class="fadeRight">Web Design in <span>Cork</span></h2>           
-                    <p>Website design in Cork with a personal touch. We bring a one-on-one attention to your project. We can advise you on the best solution for your needs. WordPress, Webflow and more.</p>
-                    <p>Not a fan of website platforms? We can also offer custom websites, built entirely from scratch.</p>
-                    <a href="#contact" class="button button-white button-arrow smoothscroll">Get started.</a> 
-                </div>
-    </div>
-
-    <div class="block-half block-white block-margins container-short light-background fadeUp">
-        <div class="grid-two">
-            <img class="fadeRight" src="images/responsive-website-design-leevy-2.png" alt="Web Design Cork" loading="lazy" style="margin: auto 0 auto 0;">
-            <div class="fadeLeft">
-                <h2><span>Mobile First</span> Web Design</h2>
-                <p>Beautiful websites that fit every screen.</p>
-                <p>Many of your audience will find you on their phones - don't make them turn away with a poor experience.</p>
-                <a href="#contact" class="button button-arrow smoothscroll">Get in touch.</a> 
-            </div>
-        </div>
-    </div>
-
-    <div class="block-full block-yellow dark-background container" id="brand">
-        <div class="grid-two">
-            <div>
-                <h2 class="fadeRight"><span>Branding</span> in Cork</h2>
-                <p class="fadeUpDelayed">Find the heart of your business, with a unique and professional brand identity.</p>
-                <p class="fadeUpDelayed">At Paprika Creative, we work with Cork businesses just like yours, to discover the purpose and goals of your business, and create a brand identity that reflects the true spirit of your company.</p>
-                <p class="fadeUpDelayed">Special packages available for start up and small businesses in Cork.</p>
-                <a href="#contact" class="button button-arrow button-white smoothscroll fadeRight">Get started.</a> 
-            </div>
-            <div class="fadeLeft">
-                <img src="/images/favicon.svg" style="object-fit: cover; height: 100%;" alt="">
-            </div>
-        </div>
-    </div>
-
-    <section class="block-white light-background" id="portfolio">
-        <div class="container-short light-background" style="text-align: center;">
-            <h2 class="fadeUp">Portfolio</h2>
-            <h3 class="fadeUpDelayed" style="text-transform: uppercase;">Case Studies</h3>
-        </div>
-            <div class="grid-video light-background">
-                <div class="portfolio-item fadeUp">
-                    <div class="item-wrap">
-                        <a href="http://leevy.ie" target="_blank"><img src="./images/portfolio-leevy-1.png" class="image-link" alt="Cork Irish Web Designer Ireland" loading="lazy"></a>
-                    <div class="portfolio-item-meta"><a href="www.leevy.ie" target="_blank"><h3><span>Leevy</span> | Website Design & Development</h3></a></div>
-                    </div>               
-                </div>
-                <div class="portfolio-item fadeUp">
-                    <div class="item-wrap">
-                        <a href="https://desmondbros.ie" target="_blank"><img src="./images/portfolio-desmond-bros-1.png" class="image-link" alt="Website Design Cork" loading="lazy"></a>
-                    <div class="portfolio-item-meta"><a href="https://desmondbros.ie" target="_blank"><h3><span>Desmond Bros</span> | Website Design & Development</h3></a></div>
-                    </div>               
-                </div>
-                <div class="portfolio-item fadeUp">
-                    <div class="item-wrap">
-                        <a href="https://designcork.github.io/heartycoffee/" target="_blank"><img src="./images/portfolio-hearty-coffee-1.png" class="image-link" alt="Cork Irish Web Designer Ireland" loading="lazy"></a>
-                    <div class="portfolio-item-meta"><a href="https://designcork.github.io/heartycoffee/" target="_blank"><h3><span>Hearty Coffee Co.</span> | Sample Website Design & Development</h3></a></div>
-                    </div>               
-                </div>
-            </div>        
-    </section>
-    <div class="block-yellow" style="transform: rotate(180deg);"> <div class="divider-clipped divider-white"></div></div>
-
-    <section class="block-half block-yellow container dark-background" id="contact">
-               
-        
-        <div class="container-short" style="text-align: center;">
-            <h2 class="fadeUp"><span>Get in Touch</span></h2>
-            <p class="fadeUpDelayed">Have a website design or branding project in Cork that you're dying to get off the ground? We'd love to have a chat to get started.</p>
-            <p class="fadeUpDelayed">Email <a href="mailto:paprikacreativedesign@gmail.com">paprikacreativedesign@gmail.com</a></p>
+           
+            
+            <div class="home-text black home">
+                    <h1 class="heroFadeUp"><span>Paprika</span> is an independent design studio, dreaming up new possibilities for passionate people.</h1>
+            </div>  
+            <a href="#intro" class="scroll-down heroFade">Scroll</a>
         </div>
        
-    </section>
-    <div class="block-yellow"> <div class="divider-clipped divider-white"></div></div>
-    
-    
-    <div class="footer">
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div><h2><a href="/index.html">Home</a></h2></div>
-                <div><h2><a href="/web-design-ireland.html">Web Design</a></h2>
-                    <a href="/web-design-cork.html">Web Design Cork</a></div>
-                <div><h2><a href="/index.html#brand" >Brand identity</a></h2></div>
-                <div><h2><a href="/book-design-ireland.html">Book Design</a></h2>
-                    <a href="/book-design-cork.html">Book Design Cork</a></div>
-                <div><h2><a href="#contact" class="smoothscroll">Contact</a></h2></div>
+    </div>
+
+    <div class="scroll-snap-start" id="intro">
+        <div class="block-black scroll-reveal shapeCircle" style=" display: flex;
+        min-height: 100vh;
+        margin: auto;
+        align-items: center;
+        text-align: left;
+        justify-content: center;">
+            <div class="container-short">
+            <p class="scroll-reveal fadeIn" id="fade">Based in Cork, Ireland, we work with brands to re-invent themselves with modern, effective design.</p>
+            <a href="#contact" class="scroll-reveal fadeUpDelayed button button-white button-contact">Want to chat?</a> 
             </div>
         </div>
-        <div class="copyright">
-            <p>©2023 All rights reserved.</p>
-            <p>Designed with ❤ by Paprika Creative</p>
-        </div>
-        <div id="wcb" class="carbonbadge"></div><script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
-
-
-
     </div>
+
+
+
+    
+    <div id="services" class="block-full block-white scroll-snap-start">
+        <div class="flex-normal">
+            <div class="flex-normal-50 scroll-reveal fadeUp"><h2 class="subtitle">services</h2></div>
+            <div class="flex-normal-50">
+                <a href="#web-design" class="scroll-reveal fadeUpDelayed"><h2 class="hover-underline">Website Design</h2></a>
+                <a href="#brand-identity" class="scroll-reveal fadeUpDelayed"><h2 class="hover-underline">Brand Identity</h2></a>
+                <a href="#product-design" class="scroll-reveal fadeUpDelayed"><h2 class="hover-underline">Product Design</h2></a>
+            </div>
+        </div>
+       
+        </div>
+
+        <div class="block-half-basic scroll-snap-start" id="web-design">
+            <div class="flex-normal">
+                <div class="block-photo stick-left scroll-reveal shapeFade">
+                    <img class="stick-left" alt="Cork Irish Web Designer Ireland" src="images/portfolio-website-design-Leevy-iPhone-Mockup.webp" loading="lazy" width="10" height="10">
+                </div>
+                <div class="container block-photo-text stick-left">
+                    <h2 class="scroll-reveal shapeFade">Website Design</h2>
+                    <p class="scroll-reveal fadeIn">Webflow</p>
+                    <p class="scroll-reveal fadeIn">Wordpress</p>
+                    <p class="scroll-reveal fadeIn">Custom code</p>
+                </div>
+            </div>
+        </div>
+        <div class="block-half-basic block-black scroll-snap-start" id="brand-identity">
+            <div class="flex-normal">
+                <div class="container block-photo-text stick-right">
+                    <h2 class="scroll-reveal shapeFade">Brand Identity</h2>
+                    <p class="scroll-reveal fadeIn">Logo design</p>
+                    <p class="scroll-reveal fadeIn">Visual identity</p>
+                    <p class="scroll-reveal fadeIn">Social media identity</p>
+                </div>
+                <div class="block-photo stick-right scroll-reveal shapeFade">                    
+                    <img class="stick-right" alt="Cork Irish Web Designer Ireland" src="images/portfolio-website-design-Desmond-Bros-Laptop-Mockup.webp" loading="lazy" width="10" height="10">
+                </div>
+            </div>
+        </div>
+        <div class="block-half-basic scroll-snap-start" id="product-design">
+            <div class="flex-normal">
+                <div class="block-photo stick-left scroll-reveal shapeFade">
+                    <div class="bg-overlay"></div>
+                    <img class="stick-left" alt="Cork Irish Web Designer Ireland" src="images/book-design-Ireland-Music_Master_Cover_mockup_yellow.webp" loading="lazy" width="10" height="10">
+                </div>
+                <div class="container block-photo-text stick-left">
+                    <h2 class="scroll-reveal shapeFade">Product Design</h2>
+                    <p class="scroll-reveal fadeIn">Book design</p>
+                    <p class="scroll-reveal fadeIn">Print design</p>
+                </div>
+            </div>
+        </div>   
+
+
+
+    <div class="block-half block-black block-margins scroll-snap-start" id="webdesign">
+                <div style="padding: 0 2em 0 2em;">        
+                    <h2 class="scroll-reveal fadeIn">Our Design <span>Mission</span></h2>           
+                    <p class="scroll-reveal fadeIn">We help passionate people.</p>
+                    <p class="scroll-reveal fadeIn">We dream into existence.</p>
+                    <a href="#contact" class="button button-white button-arrow ">Get started</a> 
+                </div>
+    </div>
+
+    <div class="scroll-snap-start" id="contact">
+        <section class="block-half container dark-background">
+                
+            
+            <div class="container-short" style="text-align: left;">
+                <h2 class="scroll-reveal fadeIn">How can we help?</h2>
+                <p class="scroll-reveal fadeIn">If you're passionate about your project, we want to hear all about it. We can't wait to get started.</p>
+                <p class="scroll-reveal fadeIn">Email <a href="mailto:paprikacreativedesign@gmail.com">paprikacreativedesign@gmail.com</a></p>
+            </div>
+        
+        </section>
+        <div class="footer scroll-reveal fadeIn">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div><h2><a href="/index.html">Home</a></h2></div>
+                    <div><h2><a href="/web-design-ireland.html">Web Design</a></h2>
+                        <a href="/web-design-cork.html">Web Design Cork</a></div>
+                    <div><h2><a href="/index.html#brand" >Brand identity</a></h2></div>
+                    <div><h2><a href="/book-design-ireland.html">Book Design</a></h2>
+                        <a href="/book-design-cork.html">Book Design Cork</a></div>
+                    <div><h2><a href="#contact" class="">Contact</a></h2></div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>©2023 All rights reserved.</p>
+                <p>Designed with ❤ by Paprika Creative</p>
+            </div>
+            <div id="wcb" class="carbonbadge"></div><script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+        </div>
+    </div>
+
+</div>
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/init.js"></script>
-    <script src="js/fadein.js"></script>
-    <script src="js/lite-yt-embed.js"></script>
+
+    <script src="js/fadein-snap.js"></script>
 
 <script>
     $('#menuToggle li a').on('click', function(){
@@ -237,6 +217,7 @@
         }
       };
     });</script>
+    <script src="/js/flickity.pkgd.min.js"></script>
 
 </body>
 
