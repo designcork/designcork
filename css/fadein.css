@@ -112,7 +112,6 @@ transform: translate(0, 0);
 
 .shapeFade {
   overflow: hidden;
-  clip-path: inset(50% 50% 50% 50% round 2%);
 }
 
 .shapeFade.visible {
