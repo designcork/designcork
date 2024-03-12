@@ -220,7 +220,6 @@ header {
 }
 
 #menuToggle {
-    mix-blend-mode: difference;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -457,7 +456,7 @@ nav ul li a {
 
 .scroll-snap-start {
     scroll-snap-align: start;
-  height: 100vh;
+  height: 100%;
   flex: none;
   position: relative;
   scroll-snap-stop: always;

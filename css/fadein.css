@@ -102,20 +102,21 @@ transform: translate(0, 0);
   overflow: hidden;
 }
 
-.shapeFade {
-  animation: heroShapeFade 0%;
-  overflow: hidden;
-}
-
-.shapeFade.visible {
-  animation: shapeFade2 2s forwards;
-}
-
 @keyframes heroShapeFade {
   0% {clip-path: inset(50% 50% 50% 50% round 2%);}
   20% {clip-path: inset(48% 35% 48% 35% round 2%);}
   80% {clip-path: inset(0 0 0 0 round 1%);}
   100% {clip-path: inset(0 0 0 0 round 0%);}
+}
+
+
+.shapeFade {
+  overflow: hidden;
+  clip-path: inset(50% 50% 50% 50% round 2%);
+}
+
+.shapeFade.visible {
+  animation: shapeFade2 2s forwards;
 }
 
 @keyframes shapeFade2 {
