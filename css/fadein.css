@@ -1,8 +1,12 @@
 .fadeUp {
 opacity: 0;
 transform: translate(0, 40px); transition: all 1.5s;
-
 }
+
+.fadeIn {
+  opacity: 0;
+  transition: all 1.5s;
+  }
 
 .fadeUpDelayed {
   opacity: 0;
@@ -19,10 +23,16 @@ opacity: 1;
 transform: translate(0, 0); 
 }
 
+.fadeIn.visible {
+  opacity: 1;
+}
+
 .fadeUpDelayed.visible {
   opacity: 1;
   transform: translate(0, 0); 
 }
+
+
 
 .fadeLeft {
   opacity: 0;
@@ -86,3 +96,45 @@ transform: translate(0, 0);
   opacity: 1;
   transform: translate(0, 0); 
 }
+
+.heroShapeFade {
+  animation: heroShapeFade 3s;
+}
+
+.shapeFade {
+  animation: heroShapeFade 0%;
+}
+
+.shapeFade.visible {
+  animation: shapeFade2 2s forwards;
+}
+
+@keyframes heroShapeFade {
+  0% {clip-path: inset(50% 50% 50% 50% round 2%);}
+  20% {clip-path: inset(48% 35% 48% 35% round 2%);}
+  80% {clip-path: inset(0 0 0 0 round 1%);}
+  100% {clip-path: inset(0 0 0 0 round 0%);}
+}
+
+@keyframes shapeFade2 {
+  0% {clip-path: inset(50% 50% 50% 50% round 2%);}
+  20% {clip-path: inset(10% 48% 10% 48% round 2%);}
+  80% {clip-path: inset(0 0 0 0 round 1%);}
+  100% {clip-path: inset(0 0 0 0 round 0%);}
+}
+
+.shapeCircle {
+  animation: shapeCircle 0%;
+}
+
+.shapeCircle.visible {
+  animation: shapeCircle 2s forwards;
+}
+
+@keyframes shapeCircle {
+  0% {clip-path: circle(0% at 50% 50%);}
+  20% {clip-path: circle(20% at 50% 50%);}
+  80% {clip-path: circle(80% at 50% 50%);}
+  100% {clip-path: circle(100% at 50% 50%);}
+}
+
