@@ -441,7 +441,7 @@ nav ul li a {
   }
 
 .container-scroll {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     overflow: auto;
     overflow-x: hidden;
     outline: 1px dashed lightgray;
@@ -1494,6 +1494,7 @@ h2.subtitle {
     padding: 0;
     margin: 0;
     line-height: 1em;
+    font-family: var(--secondary-font);
 }
 
 .footer h3 {
@@ -1614,6 +1615,23 @@ button.accordion {
 
   .carbonbadge {
     margin-left: 0;
+    margin-bottom: 1em;
+  }
+
+  #wcb.carbonbadge {
+    color: var(--black-colour) !important;
+    font-family: var(--primary-font) !important;
+  }
+
+  #wcb #wcb_a {
+    background: var(--black-colour) !important;
+    border-color: var(--black-colour) !important;
+  }
+
+  #wcb #wcb_g {
+    color: var(--black-colour)!important;
+    background: var(--white-colour) !important;
+    border-color: var(--black-colour) !important;
   }
 
 
@@ -1724,7 +1742,6 @@ button.accordion {
     .footer-container {
         margin-right: 1em;
         margin-left: 1em;
-        text-align: center;
     }
 
     
@@ -1926,7 +1943,7 @@ button.accordion {
     
     .hero-carousel {
         position: absolute;
-        width: 80%;
+        width: 64%;
         height: 64%;
         z-index: 0;
         
