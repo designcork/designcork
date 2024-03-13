@@ -1687,19 +1687,6 @@ button.accordion {
         width: 60%;
     }
 
-    .container-scroll {
-        scroll-snap-type: y proximity;
-        overflow: auto;
-        overflow-x: hidden;
-        outline: 1px dashed lightgray;
-        flex: none;
-        flex-flow: column nowrap;
-        height: 100vh;
-        scroll-behavior: smooth;
-        transition: scroll-behaviour 20s;
-        background-color: var(--white-colour);
-    } 
-
    
 
 
