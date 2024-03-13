@@ -11,10 +11,7 @@ observer = new IntersectionObserver((entries) => {
     if (entry.intersectionRatio > 0) {      
       //entry.target.classList.remove('hidden');
       entry.target.classList.add('visible');
-    } else {
-      entry.target.classList.remove('visible');
-      //entry.target.classList.add('hidden');
-    }
+    } 
   });
 });
 
