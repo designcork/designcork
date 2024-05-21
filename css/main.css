@@ -19,6 +19,7 @@ html {
     margin: 0;
     max-width: 3000px;
     background-color: var(--white-colour);
+    scroll-behavior: smooth;
 }
 
 body  {
@@ -151,7 +152,6 @@ ul {
     content: url(/images/paprika-wordmark-black.svg);
     display: block;
     width: 140px;
-    margin-top: 30px;
     padding-left: 20px;
     cursor: pointer;
     z-index: 10;
@@ -493,6 +493,26 @@ a img {
 }
 
 a.button {
+    text-align: center;
+    text-decoration: none;
+    color: var(--white-colour);
+    background-color: var(--black-colour);
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 0 auto auto auto;
+    display: inline-block;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  text-shadow:  none;
+  font-weight: 600;
+  border-color: var(--black-colour);
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+button.button {
     text-align: center;
     text-decoration: none;
     color: var(--white-colour);
@@ -880,7 +900,6 @@ a.button {
     text-align: left;
     text-decoration: none;
     width: 70%;
-    color: var(--secondary-colour);
 }
 
 .home-text.home {
@@ -1105,17 +1124,21 @@ a.button {
 
 .grid-two {
     display: grid;
-    gap: 80px;
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-    max-width: 54em;
+    gap: 8px;
     grid-template-columns: repeat(1, 1fr);
     overflow: hidden;
+    height: 100%;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
 }
 
 .grid-two img {
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
+    height: 100%;
 }
 
 .grid-video {
@@ -1635,6 +1658,55 @@ button.accordion {
     border-color: var(--black-colour) !important;
   }
 
+  .form-full {
+    margin: 0 auto 0 auto;
+    padding: 1em;
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: 700px;
+      /*margin-top:90px;
+    margin-bottom: 30px;*/
+    display: block;
+  }
+  .form-row {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    margin-bottom: 2em;
+  }
+    .input-field {
+        font: var(--secondary-font);
+        border-style: solid;
+        border-color: var(--black-colour);
+        border-radius: 4px;
+        border-width: .1px;
+        padding: 0.2em;
+        margin-left: 2em;
+        font-size: 16px;
+    }
+
+    ::placeholder {
+        font-family: var(--secondary-font);
+        color: var(--black-colour);
+        font-size: 16px;
+    }
+
+    .project {
+        width: 100%;
+        max-width: 1000px;
+        height: 300px;
+        vertical-align: top;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+
+    .place {
+        font-family: var(--secondary-font);
+        font-size: 16px;
+    }
+
 
 
 
@@ -1715,6 +1787,11 @@ button.accordion {
         font-size: 1.2em;
     }
 
+    h4 {
+        font-family: var(--secondary-font);
+        font-weight: 500;
+    }
+
     .show-desktop {
         display: block;
         opacity: 1;
@@ -1728,13 +1805,7 @@ button.accordion {
 
 
     .grid-two {
-        display: grid;
-        gap: 80px;
-        -webkit-box-flex: 1;
-        flex-grow: 1;
-        max-width: 54em;
         grid-template-columns: repeat(2, 1fr);
-        overflow: visible;
     
     }
 
