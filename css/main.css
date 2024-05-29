@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
 
 :root {
@@ -11,6 +8,7 @@
     --white-colour: #f5f5f5;
     --black-colour: #000;
     --primary-font: 'Alegreya';
+    --primary-font-italic: 'Alegreya', italic;
     --secondary-font: 'Alegreya Sans';
 
   }
@@ -1108,6 +1106,31 @@ button.button {
     font-size: 1.8em;
 }
 
+
+
+.container-short.testimonial {
+    width: 70%;
+    padding: 1em;
+}
+
+.testimonial-quote-mark::before{
+    content: "“";
+    display: block;
+    cursor: pointer;
+    margin-top: 40px;
+    background-color: var(--highlight-colour);
+    color: var(--white-colour);
+    font-size: 10em;
+    line-height: 4px;
+    font-family: var(--primary-font);
+}
+
+.testimonial-client {
+    font-family: var(--primary-font-italic);
+    font-style: italic;
+    font-weight: 200;
+}
+
 .grid-container {
     display: grid;
     column-gap: 50px;
@@ -1529,16 +1552,23 @@ h2.subtitle {
 }
 
 .footer-container {
-    margin: 0 auto 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
 }
 
 .footer-grid {
     padding: 1em 2em 1em 2em;
     display: grid;
-    gap: 30px;
+    row-gap: 30px;
+    column-gap: 80px;
     grid-template-columns: repeat(2, 1fr);
     justify-self: center;
     margin: 0 auto 0 auto;
+    text-align: left;
+    max-width: 1000px;
 
 }
 
@@ -1807,22 +1837,14 @@ button.accordion {
     .grid-two {
         grid-template-columns: repeat(2, 1fr);
     
-    }
-
-    .footer-container {
-        margin-right: 1em;
-        margin-left: 1em;
-    }
-
-    
+    }    
 
     .footer-grid {
-        padding: 1em 2em 1em 2em;
-        display: grid;
         gap: 80px;
         -webkit-box-flex: 1;
         flex-grow: 1;
         grid-template-columns: repeat(5, 1fr);
+        text-align: center;
     
     }
 
@@ -2037,8 +2059,9 @@ button.accordion {
         position: relative;
     }
 
-
-
+    .container-short.testimonial {
+        width: 50%;
+    }
 
 
 
