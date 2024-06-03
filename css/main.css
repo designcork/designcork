@@ -5,7 +5,7 @@
     --primary-colour: #000;
     --secondary-colour: #FFC52B;
     --highlight-colour: #D62828;
-    --white-colour: #f5f5f5;
+    --white-colour: rgb(237, 232, 227);
     --black-colour: #000;
     --primary-font: 'Alegreya';
     --primary-font-italic: 'Alegreya', italic;
@@ -198,7 +198,7 @@ header {
     display: flex;
     justify-content: space-between;
     justify-items: space-between;
-    max-width: 1200px;
+    max-width: 2000px;
     margin: 0 auto 0 auto;
 }
 
@@ -543,7 +543,7 @@ button.button {
     background-color: var(--white-colour);
     color: var(--primary-colour);
     border-color: var(--primary-colour);
-    border-width: 0.2px;
+    border-width: 1px;
     border-style: solid;
 }
 
@@ -552,7 +552,7 @@ button.button {
   transition: 0.4s ease;
   background-color: var(--primary-colour);
   color: var(--white-colour);
-  border-color: var(--white-colour);
+  border-color: var(--primary-colour);
 }
 
 .button-arrow {
@@ -791,13 +791,11 @@ button.button {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 90%;
+    width: 100%;
     height: 60%;
     z-index: 0;
-    border-radius: 0px 8px 0px 0;
+    border-radius: 0px 0px 0px 0;
     overflow: hidden;
-    
-
 }
 
 
@@ -903,6 +901,7 @@ button.button {
 .home-text.home {
     top: 8%;
     font-size: .8em;
+    width: 80%;
 }
 
 
@@ -1384,6 +1383,17 @@ button.button {
     transition: opacity 0.3s ease-in-out;
 }
 
+.gradient-T-B {
+    background: linear-gradient(180deg, rgba(0,0,0,.8) 0%, rgba(255,255,255,0) 30%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.gradient-T-B#home-gradient {display: none;}
+
+
 .bg-gradient-L-R {
     position: absolute;
     bottom: 0;
@@ -1527,6 +1537,7 @@ h2.subtitle {
     padding: 2em 0 4em 0;
     margin: 0 auto 0 auto;
     font-family: var(--secondary-font);
+    position: relative;
 }
 
 .footer a {
@@ -1968,9 +1979,12 @@ button.accordion {
         padding: 0;
     }
 
+    .home ul li a {
+        color: var(--white-colour);
+    }
+
     nav ul li a:hover {
         background-color: inherit;
-        color: var(--primary-colour);
     
     }
 
@@ -2035,24 +2049,27 @@ button.accordion {
     
     .hero-carousel {
         position: absolute;
-        width: 64%;
-        height: 64%;
+        width: 50%;
+        height: 100%;
         z-index: 0;
-        
-    
+        right: 0;
+        left: auto;
     }
 
     .carousel img {
         display: block;
         object-fit: cover;
         overflow: hidden;
-        width: 100%;
-        height: auto;
+        height: 100%;
+        width: auto;
       }
 
     .home-text.home {
-        top: 16%;
-        font-size: .8em;
+        width: 46%;
+        top: 10%;
+        bottom: auto;
+        left: 4%;
+        font-size: 1em;
     }
     
     .sticky.sticky-mobile {
@@ -2063,7 +2080,7 @@ button.accordion {
         width: 50%;
     }
 
-
+    .gradient-T-B#home-gradient {display: block;}
 
 }
 
