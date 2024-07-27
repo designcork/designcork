@@ -399,6 +399,7 @@ nav ul li.menu-icon{
 nav ul li {
     width: 100%;
     margin-left: 20px;
+    font-family: var(--primary-font);
 }
 
 nav ul li a {
@@ -407,7 +408,8 @@ nav ul li a {
     padding: .8em 10px;
     text-align: left;
     font-weight: 500;
-    font-size: 1.4em;
+    font-size: 2rem;
+    line-height: 1em;
 }
 
 .underline {
@@ -632,8 +634,17 @@ button.button {
 .button-overlay {
     position: absolute;
     bottom: 20px;
-    left: auto;
-    right: auto;
+    right: 2em;
+}
+
+.button-menu {
+    background-color: var(--secondary-colour);
+    color: var(--white-colour);
+    transition: color .5s;
+    overflow:hidden;
+    border-radius: var(--border-radius);
+    padding: 6px 2px 6px 2px;
+    margin: auto;
 }
 
 .outside-link::after {
@@ -660,16 +671,6 @@ button.button {
 .block-white {
     background: var(--white-colour);
     color: var(--primary-colour);
-    text-align: left;
-    padding: 1em 0 1em 0;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10em;
-}
-
-.block-red {
-    background:var(--white-colour);
-    color: #D62828;
     text-align: left;
     padding: 1em 0 1em 0;
     align-items: center;
@@ -714,21 +715,23 @@ button.button {
 }
 
 .block-black {
-    background-color: var(--black-colour);
-    color: var(--white-colour);
+    background-color: var(--black-colour) !important;
+    color: var(--white-colour) !important;
 }
 
 .block-yellow {
-    background-color: var(--secondary-colour);
-    color: var(--primary-colour);
+    background-color: var(--secondary-colour) !important;
+    color: var(--primary-colour) !important;
 }
 
 .block-green {
-    background-color: var(--highlight-colour-2);
+    background-color: var(--highlight-colour-2) !important;
+    color: var(--primary-colour) !important;
 }
 
 .block-red {
-    background-color: var(--primary-colour);
+    background-color: var(--highlight-colour) !important;
+    color: var(--white-colour);
 }
 
 
@@ -1187,7 +1190,6 @@ button.button {
 }
 
 .testimonial-holder {
-    overflow: visible;
     width: 100%;
     height: 100%;
     position: relative;
@@ -1894,6 +1896,9 @@ button.accordion {
 
 
 @media only screen and (min-width: 900px) {
+    .hide-desktop {
+        display: none;
+    }
 
     p {
         font-size: 1.2rem;
@@ -2038,17 +2043,15 @@ button.accordion {
         overflow:hidden;
         border-radius: var(--border-radius);
         width: 100%;
+        padding: 6px 2px 6px 2px;
     }
 
     .button-menu:hover {
         transition: all .5s;
-        background-color: #1F4D7A;
-        color: white;
+        background-color: var(--primary-colour);
+        color: var(--white-colour);
       }
-      .button-menu:hover {
-        color: #fff;
-        
-      }
+
       .button-menu:hover:before {
         transform: translateX(0);
         border-radius: var(--border-radius);
