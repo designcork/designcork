@@ -8,7 +8,8 @@
         <link rel="icon" sizes="72x72" href="images/favicon.png">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/fadein.css">
-        <link rel="stylesheet" href="/css/flickity.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="/css/swiper-custom.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <meta name="site_name" property="og:site_name" content="Paprika Creative">
         <meta property="og:title" content="Paprika Creative | Web Design, Brand Design in Cork">
@@ -24,7 +25,7 @@
     </head>
 
 <body>
-    <a href="/contact.html" class="contact-ribbon heroFade">get in touch</a>
+
 <div class="container-scroll">
     <div class="scroll-snap-start">
     <header class="heroFade sticky sticky-mobile">
@@ -51,131 +52,132 @@
             </div>
         </nav>
     </header>
-        <div class="hero-image-template bg-white heroFade" id="top">
+        <div class="hero-image-template" id="top">
             
-            <div class="hero-carousel photo-carousel-holder heroShapeFade">               
-                <div class="carousel" data-flickity='{"autoPlay": 6200,  "imagesLoaded": true, "percentPosition": true, "wrapAround": true, "pauseAutoPlayOnHover": false, "fullscreen": true, "setGallerySize": false, "pageDots": false }'>
-                    <img alt="Irish brand identity creative agency company" src="images/portfolio-website-design-Castlefreke-Laptop.webp" height="200" loading="lazy">
-                    <img alt="Ireland website design agency" src="images/portfolio-website-design-Desmond-Bros-Laptop-Mockup.webp" height="200" loading="lazy">
-                    <img alt="Irish book cover product design" src="images/book-design-Ireland-Music_Master_Cover_mockup_yellow.webp" height="200" loading="lazy">
-                    <img alt="Irish creative agency production company" src="images/portfolio-website-design-Leevy-iPhone-Mockup.webp" height="200" loading="lazy">
-                  </div>
-                  <div class="gradient-T-B" id="home-gradient"></div>  
+            <div class="container-flex home2"> 
+                <div class="hero-carousel photo-carousel-holder heroShapeFade"> 
+                    <div class="swiper mySwiper carousel">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                 <img alt="Irish creative agency production company" src="images/portfolio-website-design-Leevy-iPhone-Mockup.webp" height="200" loading="lazy">
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Irish brand identity creative agency company" src="images/portfolio-website-design-Castlefreke-Laptop.webp" height="200" loading="lazy">
+                           </div>
+                           <div class="swiper-slide">
+                            <img alt="Ireland website design agency" src="images/portfolio-website-design-Desmond-Bros-Laptop-Mockup.webp" height="200" loading="lazy">
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Irish book cover product design" src="images/book-design-Ireland-Music_Master_Cover_mockup_yellow.webp" height="200" loading="lazy">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                </div>
             </div>
            
             
-            <div class="home-text home">
-                    <h1 class="heroFadeUp"><span>Paprika</span> is an independent design studio, dreaming up new possibilities for passionate people.</h1>
-                    <a href="#intro" class="scroll-reveal fadeUpDelayed button button-white button-arrow">Discover more</a> 
+            <div class="container-flex home">
+                <div class="home-text home">
+                    <h1 class="scroll-reveal" data-animate="slideup">Paprika is an independent design studio, dreaming up new possibilities for passionate people.</h1>
+                    <div><a href="#intro" class="heroFade button button-white button-arrow">Discover more</a></div>
+                </div>
             </div>
         </div>
        
     </div>
 
-    <div class="scroll-snap-start dark-background" id="intro">
-        <div class="block-black scroll-reveal shapeCircle" style=" display: flex;
-        min-height: 100vh;
-        margin: auto;
-        align-items: center;
-        text-align: left;
-        justify-content: center;">
-            <div class="container-short">
-            <p class="scroll-reveal fadeIn" id="fade">Based in Cork, Ireland, we work with brands to re-invent themselves with modern, effective design.</p>
-            <a href="/contact.html" class="scroll-reveal fadeUpDelayed button button-white button-contact">Want to chat?</a> 
-            </div>
-        </div>
-    </div>
-
-
-
-    
-    <div id="services" class="block-full block-white scroll-snap-start">
-        <div class="flex-normal">
-            <div class="flex-normal-50 scroll-reveal fadeUp"><h2 class="subtitle">services</h2></div>
-            <div class="flex-normal-50">
-                <a href="#web-design" class="scroll-reveal fadeUpDelayed"><h2 class="hover-underline">Website Design</h2></a>
-                <a href="#brand" class="scroll-reveal fadeUpDelayed"><h2 class="hover-underline">Brand Identity</h2></a>
-                <a href="#product-design" class="scroll-reveal fadeUpDelayed"><h2 class="hover-underline">Book Design</h2></a>
-            </div>
-        </div>       
-    </div>
-    <div class="dark-background block-full block-black" id="testimonial">
-        <div class="grid-holder">
-            <div class="grid-two">
-                <div class="scroll-reveal shapeFade">
-                    <img class="rounded" alt="Cork Irish Web Designer Ireland" src="images/portfolio-website-design-Leevy-iPhone-Mockup.webp" loading="lazy" width="10" height="10">
+    <div class="scroll-snap-start container-flex" id="intro">
+            <div class="container-short block-black rounded">
+                <div class="container-short">
+                    <p class="scroll-reveal" data-animate="slideup" id="fade">Based in Cork, Ireland, we work with brands to reinvent themselves with modern, effective design.</p>
+                    <a href="/contact.html" class="scroll-reveal fadeUpDelayed button button-white button-contact">Want to chat?</a> 
                 </div>
-                <div class="block-black scroll-reveal fadeIn">
-                    <div class="container-short testimonial">
-                    <div class="testimonial-quote-mark"></div>
-                    <h4>some kind words</h4>
-                    <h2>“With Paprika, the results were beyond anything I could have asked for.</h2>
-                    <p class="scroll-reveal fadeIn">I recently worked with Paprika on my <a href="https://www.leevy.ie" style="text-decoration: underline;">band website</a> and I couldn't be happier. I would recommend Paprika to everyone!”</p>
-                    <p class="testimonial-client">Amhlaoibh McSweeney (<a href="https://www.leevy.ie" style="text-decoration: underline;">Leevy</a>, Irish artist)</p>
+            </div>
+    </div>
+
+    <div id="services" class="block-full container-flex">
+        <div class="testimonial-holder">
+            <div class="container-short"><h2 class="scroll-reveal" data-animate="slideup">What we do.</h2></div>
+            <div class="container-flex">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-card">
+                            <a href="/web-design-ireland.html" class="scroll-reveal fadeUpDelayed"><h3 class="hover-underline">Website Design</h3></a><img src="/images/portfolio-website-design-Castlefreke-Laptop.webp" alt="">
+                            <a href="/web-design-ireland.html" class="button button-arrow button-white scroll-reveal fadeIn button-overlay">Our web design work</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-card">
+                            <a href="/web-design-ireland.html" class="scroll-reveal fadeUpDelayed"><h3 class="hover-underline">Brand Design</h3></a><img src="/images/portfolio-website-design-Leevy-iPhone-Mockup.webp" alt="">
+                            <a href="/web-design-ireland.html" class="button button-arrow button-white scroll-reveal fadeIn button-overlay">Our brand design work</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-card">
+                            <a href="/book-design-ireland.html" class="scroll-reveal fadeUpDelayed"><h3 class="hover-underline">Book Design</h3></a><img src="/images/book-design-Ireland-Music_Master_Cover_mockup_yellow.webp" alt="">
+                            <a href="/book-design-ireland.html" class="button button-arrow button-white scroll-reveal fadeIn button-overlay">Our book design work</a>
+                            </div>
+                        </div>
                     </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-
             </div>
-        </div>
-        
+        </div>     
     </div>
 
-        <div class="block-half-basic scroll-snap-start" id="web-design">
-            <div class="flex-normal">
-                <div class="block-photo stick-left scroll-reveal shapeFade">
-                    <a href="/web-design-ireland.html"><img class="stick-left" alt="Cork Irish Web Designer Ireland" src="images/portfolio-website-design-Castlefreke-Laptop.webp" loading="lazy" width="10" height="10"></a>
+    <div class="block-full container-short container-flex" id="testimonial2">
+        <div class="testimonial-holder">
+            <h2 class="scroll-reveal" data-animate="slideup">Some <span>kind words</span>.</h2>
+            <div class="swiper mySwiper swiper-quote">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><div class="carousel-text">
+                    <p class="quote">A dream to collaborate with! Their vision and skills made the entire project seamless.</p>
+                    <p>Benjamin Walsh, Creative Director, Retake</p></div></div>
+                  <div class="swiper-slide"><div class="carousel-text">
+                    <p class="quote">With Paprika, the results were beyond anything I could have asked for.</p>
+                    <p>Amhlaoibh McSweeney (<a href="https://www.leevy.ie" style="text-decoration: underline;">Leevy</a>, Irish artist)</p></div></div>
                 </div>
-                <div class="container block-photo-text stick-left">
-                    <a href="/web-design-ireland.html"><h2 class="scroll-reveal shapeFade">Website Design</h2></a>
-                    <p class="scroll-reveal fadeIn">Webflow</p>
-                    <p class="scroll-reveal fadeIn">Wordpress</p>
-                    <p class="scroll-reveal fadeIn">Custom code</p>
-                    <a href="/web-design-ireland.html" class="button button-arrow button-white scroll-reveal fadeIn">Our web design work</a>
-                </div>
-            </div>
+                <div class="swiper-pagination"></div>
+            </div>            
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        <div class="block-half-basic block-black scroll-snap-start" id="brand">
-            <div class="flex-normal">
-                <div class="container block-photo-text stick-right">
-                    <h2 class="scroll-reveal shapeFade2">Brand Identity</h2>
-                    <p class="scroll-reveal fadeIn">Logo design</p>
-                    <p class="scroll-reveal fadeIn">Visual identity</p>
-                    <p class="scroll-reveal fadeIn">Social media identity</p>
-                </div>
-                <div class="block-photo stick-right scroll-reveal shapeFade2">                    
-                    <img class="stick-right" alt="Cork Irish Web Designer Ireland" src="images/portfolio-website-design-Desmond-Bros-Laptop-Mockup.webp" loading="lazy" width="10" height="10">
-                </div>
-            </div>
-        </div>
-        <div class="block-half-basic scroll-snap-start" id="product-design">
-            <div class="flex-normal">
-                <div class="block-photo stick-left scroll-reveal shapeFade">
-                    <a href="/book-design-ireland.html"><img class="stick-left" alt="Cork Irish Web Designer Ireland" src="images/book-design-Ireland-Music_Master_Cover_mockup_yellow.webp" loading="lazy" width="10" height="10"></a>
-                </div>
-                <div class="container block-photo-text stick-left">
-                    <a href="/book-design-ireland.html"><h2 class="scroll-reveal shapeFade">Book Design</h2></a>
-                    <a href="/book-design-ireland.html"><p class="scroll-reveal fadeIn">Cover design</p></a>
-                    <a href="/web-design-ireland.html" class="button button-arrow button-white scroll-reveal fadeIn">Our book design work</a>
-                </div>
-            </div>
-        </div>   
+    </div>
 
-
-
-    <div class="block-half block-black block-margins scroll-snap-start" id="webdesign">
-                <div style="padding: 0 2em 0 2em;">        
-                    <h2 class="scroll-reveal fadeIn">Our Design <span>Mission</span></h2>           
-                    <p class="scroll-reveal fadeIn">We help passionate people.</p>
-                    <p class="scroll-reveal fadeIn">We dream into existence.</p>
-                    <a href="/contact.html" class="button button-white button-arrow ">Get started</a> 
+    <div class="block-half block-black block-margins block-yellow scroll-snap-start" id="ethos">
+                <div class="container-short">        
+                    <h2 class="scroll-reveal" data-animate="slideup">Our Ethos</h2>
+                    <div class="grid-three">
+                        <div>
+                            <h3 class="scroll-reveal fadeIn">Our Design Mission</h3>         
+                            <p class="scroll-reveal fadeIn">We help passionate people.</p>
+                        </div>
+                        <div>
+                            <h3 class="scroll-reveal fadeIn">Sustainability</h3>
+                            <p class="scroll-reveal fadeIn">Sustainable design is a priority. Cutting down on carbon emissions, one web page at a time.</p>
+                        </div>
+                        <div>
+                            <h3 class="scroll-reveal fadeIn">Ethical Design</h3>
+                            <p class="scroll-reveal fadeIn">We only work with companies that we believe in. That means that we don't work with <a class="underline" href="https://www.bcorporation.net/en-us/standards/controversial-issues/">unethical industries</a>.</p>
+                        </div>
+                    </div>
+                   
+                    <a href="/contact.html" class="button button-arrow ">Get started</a> 
                 </div>
     </div>
 
     <div id="contact">
         <section class="container">
             <div class="container-short" style="text-align: left;">
-                <h2 class="scroll-reveal fadeIn">How can we help?</h2>
-                <p class="scroll-reveal fadeIn">If you're passionate about your project, we want to hear all about it. We can't wait to get started.</p>
+                <h2 class="scroll-reveal" data-animate="slideup">How can we help?</h2>
+                <p class="scroll-reveal fadeIn">If you're passionate about your project, we want to hear all about it.</p>
+                <p>We can't wait to get started.</p>
                 <a href="/contact.html" class="button button-white button-arrow ">Get in touch.</a> 
             </div>
         
@@ -208,7 +210,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/init.js"></script>
 
+    <script src="js/fadein.js"></script>
     <script src="js/fadein-snap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/swiper-custom.js"></script>
 
 <script>
     $('#menuToggle li a').on('click', function(){
@@ -236,7 +241,9 @@
         }
       };
     });</script>
-    <script src="/js/flickity.pkgd.min.js"></script>
+    <script src="/js/swiper.js"></script>
+
+    
 
 </body>
 
