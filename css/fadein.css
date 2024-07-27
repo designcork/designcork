@@ -155,3 +155,55 @@ transform: translate(0, 0);
   100% {clip-path: circle(100% at 50% 50%);}
 }
 
+
+
+
+[data-animate] {
+  line-height: 1em;
+}
+[data-animate] > span {
+  display: inline-block;
+  height: 1.2em;
+  overflow: hidden;
+}
+
+[data-animate] > span > span {
+  display: none;
+  animation: 1.4s;
+  animation-fill-mode: backwards;
+}
+[data-animate].show > span > span {
+  display: inline-block;
+}
+
+.visible[data-animate=slideup] > span > span {
+  animation-name: slideUp;
+}
+
+[data-animate=zoomin] > span > span {
+  animation-name: zoomIn;
+}
+
+[data-animate=slidedown] > span > span {
+  animation-name: slideDown;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translate(0, 1.2em);
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translate(0, -1.2em);
+  }
+}
+

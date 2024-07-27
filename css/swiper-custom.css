@@ -1,0 +1,93 @@
+
+/* Swiper container stylng */
+.swiper{
+  width: 90%;
+  padding: 4% !important;
+  cursor: pointer;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 !important;
+}
+
+.carousel.swiper {
+  padding: 0 !important;
+  max-width: none;
+  width: 100%;
+}
+
+.swiper-slide {
+  width: 90%;
+  text-align: center;
+  /* Center slide text vertically */
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet{
+  background-color: var(--black-colour);
+  border-color: var(--white-colour);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-card {
+  background-color: var(--black-colour);
+  height: 400px;
+  border-radius: 40px;
+  color: var(--white-colour) !important;
+  margin: 1em;
+  overflow: hidden;
+  text-align: left;
+  padding: 2em;
+}
+
+.swiper-quote {
+  background-color: var(--black-colour);
+  border-radius: 40px;
+  color: var(--white-colour) !important;
+  max-width: 1000px;
+  margin: 1em;
+  overflow: hidden;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-size: 30px;
+  --swiper-navigation-color: var(--black-colour);
+  background-color: var(--white-colour);
+  padding: 1em;
+  width: 10px;
+  height: 10px;
+  border-radius: var(--border-radius);
+  position: absolute !important;
+  bottom: 0 !important;
+  border-color: var(--black-colour);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  background-color: var(--black-colour);
+  color: var(--white-colour);
+
+}
+
+.testimonial-holder > .swiper-button-next, .testimonial-holder > .swiper-button-prev {
+  background-color: var(--black-colour);
+  color: var(--white-colour);
+  margin-bottom: 0;
+  margin-top: 240px;
+}
+
+.testimonial-holder > .swiper-button-next:hover, .testimonial-holder > .swiper-button-prev:hover {
+  background-color: var(--white-colour);
+  color: var(--black-colour);
+}
