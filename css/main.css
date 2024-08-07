@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 @font-face {
     font-family: 'RL Madena';
     src: url('/fonts/RL-Madena.woff');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'Setanta Sans';
-    src: url('/fonts/SetantaBegins-Regular.otf');
-    font-weight: normal;
+    font-family: 'Karla';
+    src: url('/fonts/Karla-VariableFont_wght.woff2');
+    font-weight: 100 200 300 400 500 600 700 800 900 1000;
     font-style: normal;
+    font-display: swap;
 }
+
 
 :root {
     --primary-colour: #181A18;
@@ -23,7 +23,7 @@
     --black-colour: #181A18;
     --primary-font: 'RL Madena';
     --primary-font-italic: 'Alegreya', italic;
-    --secondary-font: 'Karla';
+    --secondary-font: 'Karla', sans-serif;
     --border-radius: 10px;
   }
 
@@ -102,6 +102,8 @@ ul {
     padding: 0;
 }
 
+.center {text-align: center;}
+
 .container {
     padding: 1em;
     margin-right: 0.2em;
@@ -124,9 +126,8 @@ ul {
 }
 
 .logo-box {
-    position: absolute;
     max-width: 100%;
-    margin-right: 10px;
+    margin-top: 10px;
     z-index: 10;
     left: 8%;
     overflow: visible;
@@ -143,31 +144,27 @@ ul {
 }
 
 .logo-box::before {
-    content: url(/images/paprika-wordmark-black.svg);
-    display: block;
+    content: '';
+    -webkit-mask: url(/images/paprika-wordmark-black.svg) no-repeat 50% 50%;
+    mask: url(/images/paprika-wordmark-black.svg) no-repeat 50% 50%;
+    background-color: var(--highlight-colour);
+    display: inline-block;
     width: 140px;
-    padding-left: 20px;
+    height: 40px;
     cursor: pointer;
-    z-index: 10;
-    border-bottom: 2px;
-    border-radius: 10px;
-    border-width: 6px;
-    border-style: solid;
-    border-color: rgba(0,0,0,0);
-    border-top: rgba(0,0,0,0);
-    border-left: rgba(0,0,0,0);
-    border-right: rgba(0,0,0,0);
-
+    text-decoration: none;
+    padding: none;
+    margin: 8px 0 0 20px;
+    align-items: center;  
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    mask-size: cover;
+    overflow: hidden;
 }
 
 
 .logo-footer.logo-box::before {
-    content: url(/images/logo.svg);
-    width: 80px;
-    padding: 0;
-    margin-top: 14px;
-
-    margin-left: 0px;
+    background-color: var(--white-colour);
 }
 
 .show-mobile {
@@ -196,6 +193,7 @@ header {
     align-items: center;
     max-width: 2000px;
     margin: 0 auto 0 auto;
+    padding-bottom: 20px;
 }
 
 .sticky {
@@ -350,6 +348,7 @@ header {
 
 nav {
     display: block;
+position: relative;
 }
 
 .mobile-nav {
@@ -580,7 +579,7 @@ button.button {
     content: '';
     -webkit-mask: url(/images/arrow-small-light-blue.svg) no-repeat 50% 50%;
     mask: url(/images/arrow-small-light-blue.svg) no-repeat 50% 50%;
-    background-color: var(--black-colour);
+    background-color: var(--white-colour);
       display: inline-block;
       width: 14px;
       height: 14px;
@@ -598,6 +597,7 @@ button.button {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   transform: translateX(6px);
+  background-color: var(--black-colour);
 }
 
 .white.button-arrow::after {background-color: var(--white-colour);}
@@ -714,6 +714,9 @@ button.button {
     text-align: left;
     justify-content: center;
     position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .block-half {
@@ -933,6 +936,7 @@ max-height: 500px;
     background-color: var(--white-colour);
     overflow: hidden;
     z-index: -10;
+    color: var(--white-colour);
 }
 
 .hero-image-template.bg-white {
@@ -1225,7 +1229,7 @@ max-height: 500px;
 
 }
 
-#intro p {
+#intro-home p {
     font-size: 1.8em;
 }
 
@@ -1455,6 +1459,12 @@ p.quote {
     height: 100%;
 }
 
+.intro-container {
+    background-color: rgba(24, 26, 24, .8);
+  border-radius: var(--border-radius);
+  padding: 2em;
+}
+
 .icon::after {
     width: 32px;
     height: 32px;
@@ -1488,8 +1498,9 @@ p.quote {
 }
 
 .icon-footer::after {
-    height: 1em !important;
-    width:  1em !important;
+    height: .8em !important;
+    width:  .8em !important;
+    background-color: var(--white-colour) !important;
 }
 
 .popup-gallery {
@@ -1504,6 +1515,10 @@ p.quote {
   justify-content: center;
   width: 100%;
   max-width: 90%;
+}
+
+.popup-gallery.one-two{
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .popup-gallery-item {
@@ -1521,6 +1536,11 @@ p.quote {
     object-fit: cover;
     transition: all 0.4s ease-in-out;
     border-radius: var(--border-radius);
+}
+
+.popup-gallery.one-two img{
+    height: 100%;
+    width: auto;
 }
 
 .popup-gallery img:hover {
@@ -1889,14 +1909,16 @@ h2.subtitle {
 
 
 .footer {
-    width: 100%;
+    width: 90%;
     height: auto;
     background-color: var(--white-colour);
-    color: var(--primary-colour);
+    color: var(--white-colour);
     padding: 2em 0 4em 0;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 1em auto;
     font-family: var(--secondary-font);
     position: relative;
+    background-color: var(--black-colour);
+    border-radius: var(--border-radius);
 }
 
 .footer a {
@@ -1964,6 +1986,16 @@ bottom: 0;
 z-index: 2;
 }
 
+.divider-clipped-ribbon {
+    height: 600px;
+    width: 100%;
+    clip-path: polygon(0 90%, 100% 80%, 100% 90%, 0 100%);
+    bottom: -60px;
+    position: absolute;
+
+  }
+
+
 .divider-clipped {
     height: 100px;
     width: 100%;
@@ -1974,6 +2006,15 @@ z-index: 2;
     margin-top: -1px;
     margin-bottom: -1px;
 
+  }
+
+
+  .divider-white {
+    background-color: var(--white-colour);
+  }
+
+  .divider-yellow {
+    background-color: var(--secondary-colour);
   }
 
   .divider-home {
@@ -2160,8 +2201,9 @@ button.accordion {
         width: 60%;
     }
 
-   
-
+    .popup-gallery.one-two{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 
 }
@@ -2232,6 +2274,8 @@ button.accordion {
     nav {
         margin: 0;
         display: block;
+        padding: 0;
+        overflow: hidden;
     }
 
     nav ul {
@@ -2244,7 +2288,7 @@ button.accordion {
         padding-right: 0;
         margin: 0;
         width: 100%;
-        
+        top: 0;      
         
     }
 
