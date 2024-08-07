@@ -8,7 +8,8 @@
         <link rel="icon" sizes="72x72" href="images/favicon.png">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/fadein.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <script src="js/jquery.min.js"></script>
         <meta name="site_name" property="og:site_name" content="Paprika Creative">
         <meta property="og:title" content="Book Design | Ireland | Cork | Paprika Creative">
         <meta name="description" content="Book design and book cover design in Cork and Ireland. Paprika is an Irish design agency based in Cork, Ireland, specialising in web design, brand identity, and brand design.">
@@ -32,13 +33,15 @@
         <nav>
             <div id="menuToggle" class="menu-btn menuToggle">
                 <input type="checkbox" class="toggle" name="menuTog">
-                <span></span>
-                <span></span>
+                <span class="toggle-1"></span>
+                <span class="toggle-text">menu</span>
+                <span class="toggle-2"></span>
+                <span class="toggle-close">close</span>
                 
 
                 <ul class="show-desktop hide-mobile" id="nav">
                     <li><a href="/web-design-ireland.html" class="hover-underline">web design</a></li>                    
-                    <li><a href="index.html#brand" class="hover-underline">brand identity</a></li>
+                    <li><a href="/brand-design-Ireland.html" class="hover-underline">brand design</a></li>
                     <li><a href="/book-design-ireland.html" class="hover-underline">book design</a></li>
                     <li><a href="/contact.html" class="hover-underline">contact</a></li>
                 </ul>
@@ -46,55 +49,39 @@
         </nav>
     </header>
 
-    <div class="block-half" id="top">
-        
-        <div class="container-short">
-            <h1 class="heroFadeUp"><span>Book Design</span> in Ireland.</h1>
-
-            <p class="heroFadeDelayed">Paprika is an Irish design agency which specialises in book design and book cover design.</p>
-            <p class="heroFadeDelayed">Based in Cork, we work with authors and publishers around Ireland and the world. See examples below.</p>
-            <a href="#book-cover" class="button button-white smoothscroll button-arrow heroFadeDelayed">Samples of Book Design</a> 
-        </div>
-
+    <div class="block-full heroFade" id="top" style="background-image: url(../images/book-design-Ireland-Flatlay_Book_Mockup_01.png);">
+            <div class="container-short">
+                <div class="home-text center">
+                    <h1 class="heroFadeDelayed" style="color: var(--white-colour);"><span>Book Design</span> in Ireland</h1>
+                   
+                    <a href="#intro" class="button button-white smoothscroll button-arrow heroFadeDelayed">Samples of Book Design</a> 
+                </div>
+            </div>            
+            <div class="divider-clipped-ribbon divider-yellow"></div>
     </div>
-    <div class="block-white" style="margin: 0;"><div class="divider-clipped divider-yellow" style="margin: 0; padding: 0;"></div><div class="divider-clipped divider-yellow" style="transform: rotate(180deg); margin: 0; padding: 0;"></div></div>
+    <div class="block-white block-half" id="intro">
+        <div class="container-short block-green rounded">
+            <p class="heroFadeDelayed">Paprika is an Irish design agency which specialises in book design and book cover design.</p>
+            <p class="heroFadeDelayed">Based in Cork, we work with authors and publishers around Ireland and the world.</p>
+            <p class="heroFadeDelayed">Want to start your book cover design project?</p>
+            <a href="/contact.html" class="button smoothscroll button-arrow button-text heroFadeDelayed center">Get in touch</a> 
+        </div>        
+    </div>
 
-
-
-    <section class="block-white light-background" id="book-cover">
+    <div class="container container-short" id="book-cover" style="text-align: center;">
         <div class="container-short light-background" style="text-align: center;">
             <h2 class="fadeUp">Book Cover Design Ireland</h2>
         </div>
-            <div class="grid-book light-background">
-                <div class="portfolio-item fadeUp">
-                    <img src="/images/book-design-Ireland-Music_Master_Cover_mockup_yellow.webp" alt="Irish book cover design, book designer Ireland">
-                </div>
-                <div class="portfolio-item fadeUp">
-                    <img src="/images/book-design-Ireland-Detective_Cover_Mockup_yellow.webp" alt="Irish book cover design, book designer Ireland">
-                </div>
-                <div class="portfolio-item fadeUp">
-                    <img src="/images/book-design-Fish_Cover_Mockup_yellow.webp" alt="Ireland book cover design, Irish book designer Ireland" loading="lazy">
-                </div>
-                <div class="portfolio-item fadeUp">
-                    <img src="/images/book-design-Fantasy_Cover_Mockup_yellow.webp" alt="Irish book designer, book cover designer Ireland" loading="lazy">
-                </div>
-                <div class="portfolio-item fadeUp">
-                    <img src="/images/book-design-Ireland-Ocean_Too_Deep_Cover_mockup_yellow.webp" alt="Irish book cover design, book designer Ireland" loading="lazy">
-                </div>
-                <div class="portfolio-item fadeUp">
-                    <img src="/images/book-design-Ireland-Forest_Cover_Mockup_yellow.webp" alt="Irish authors cover design, Ireland book designer" loading="lazy">
-                </div>
-                <div class="portfolio-item fadeUp">
-                    <img src="/images/book-design-Ireland-Fainted_Love_Cover_Mockup_yellow.webp" alt="Irish book cover design, book designer Ireland" loading="lazy">
-                </div>
-                <div class="portfolio-item fadeUp">
-                    <img src="/images/book-design-Ireland-Business_Cover_Mockup_yellow.webp" alt="book design for Irish authors, Ireland based book designer" loading="lazy">
-                </div>
-                <div class="portfolio-item fadeUp">
-                    <img src="/images/book-design-Ireland-Lifestyle_Cover_Mockup_yellow.webp" alt="Irish book cover design, book designer Ireland" loading="lazy">
-                </div>
-            </div>        
-    </section>
+        <div class="popup-gallery one-two">            
+            <a class="popup-gallery-item" href="/images/book-design-Ireland-Thriller_Lighthouse_Cover_mockup_transparent.png"><img class="scroll-reveal fadeUp" src="/images/book-design-Ireland-Thriller_Lighthouse_Cover_mockup_transparent.png" alt="Irish novel book cover designer, book designer Ireland"></a>
+            <a class="popup-gallery-item" href="/images/book-design-Ireland-Music_Master_Cover_mockup_transparent.webp"><img class="scroll-reveal fadeUp" src="/images/book-design-Ireland-Music_Master_Cover_mockup_transparent.webp" alt="Irish book cover design, book designer Ireland"></a>
+            <a class="popup-gallery-item" href="/images/book-design-Ireland-Detective_Cover_Mockup_transparent.webp"><img class="scroll-reveal fadeUp" src="/images/book-design-Ireland-Detective_Cover_Mockup_transparent.webp" alt="Irish book cover design, book designer Ireland"></a>
+            <a class="popup-gallery-item" href="/images/book-design-Fish_Cover_Mockup_yellow.webp"><img class="scroll-reveal fadeUp" src="/images/book-design-Fish_Cover_Mockup_yellow.webp" alt="Ireland book cover design, Irish book designer Ireland" loading="lazy"></a>
+            <a class="popup-gallery-item" href="/images/book-design-Ireland-Ocean_Too_Deep_Cover_mockup_transparent.webp"><img class="scroll-reveal fadeUp" src="/images/book-design-Ireland-Ocean_Too_Deep_Cover_mockup_transparent.webp" alt="Irish book cover design, book designer Ireland" loading="lazy"></a>
+            <a class="popup-gallery-item" href="/images/book-design-Ireland-Forest_Cover_Mockup_transparent.webp"><img class="scroll-reveal fadeUp" src="/images/book-design-Ireland-Forest_Cover_Mockup_transparent.webp" alt="Irish authors cover design, Ireland book designer" loading="lazy"></a>
+            <a class="popup-gallery-item" href="/images/book-design-Ireland-Fantasy_Cover_Mockup_transparent.png"><img class="scroll-reveal fadeUp" src="/images/book-design-Ireland-Fantasy_Cover_Mockup_transparent.webp" alt="Irish authors cover design, Ireland book designer" loading="lazy"></a>
+        </div>
+    </div>
 
     <div class="block-full block-yellow dark-background container" id="brand">
         <div class="grid-two">
@@ -106,7 +93,7 @@
                 <a href="/contact.html" class="button button-arrow button-white fadeRight">Get started.</a> 
             </div>
             <div class="fadeLeft">
-                <img src="/images/book-design-mockup-Detective_01.webp" style="object-fit: cover; height: 100%;" alt="Irish book cover design, book designer Ireland" loading="lazy">
+                <img class="rounded" src="/images/book-design-mockup-Detective_01.webp" style="object-fit: cover; height: 100%;" alt="Irish book cover design, book designer Ireland" loading="lazy">
             </div>
         </div>
     </div>
@@ -162,32 +149,29 @@
     
     
     <div class="footer">
+            
         <div class="footer-container">
+            <a href="#top" class="ribbon-to-top heroFade" aria-label="Back to top" title="Back to top"></a>
             <div class="footer-grid">
                 <div><h2><a href="/index.html">Home</a></h2></div>
                 <div><h2><a href="/web-design-ireland.html">Web Design</a></h2>
                     <a href="/web-design-cork.html">Web Design Cork</a></div>
-                <div><h2><a href="/index.html#brand" >Brand identity</a></h2></div>
+                <div><h2><a href="/brand-design-Ireland.html" >Brand Design</a></h2></div>
                 <div><h2><a href="/book-design-ireland.html">Book Design</a></h2>
                     <a href="/book-design-cork.html">Book Design Cork</a></div>
-                <div><h2><a href="/contact.html">Contact</a></h2></div>
+                <div><h2><a href="/contact.html" class="">Contact</a></h2></div>
             </div>
         </div>
         <div class="copyright">
             <p>©2024 All rights reserved.</p>
-            <p>Designed with ❤ by Paprika Creative</p>
+            <p>Designed with <span class="icon icon-heart icon-footer"></span> by Paprika Creative</p>
         </div>
         <div id="wcb" class="carbonbadge"></div><script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
-
-
-
     </div>
     
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/init.js"></script>
     <script src="js/fadein.js"></script>
-    <script src="js/lite-yt-embed.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
 
 <script>
     $('#menuToggle li a').on('click', function(){
@@ -215,6 +199,29 @@
         }
       };
     });</script>
+
+<script>
+    $(document).ready(function() {
+$('.popup-gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Loading image #%curr%...',
+    mainClass: 'mfp-fade',
+    gallery: {
+        enabled: true,
+        preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+        arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
+        tPrev: 'Previous (Left arrow key)', // title for left button
+        tNext: 'Next (Right arrow key)', // title for right button
+    },
+    
+    image: {
+        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+    }
+    
+});
+});
+</script>
 
 </body>
 
