@@ -67,13 +67,13 @@ p {
 }
 
 h1 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 2rem;
 }
 
 h2 {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 500;
     font-family: var(--primary-font), sans-serif;
     line-height: 2em;
     margin-bottom: 0;
@@ -2229,6 +2229,7 @@ button.accordion {
     
     h2 {
         font-size: 3rem;
+        font-weight: 600;
         line-height: 3rem;
     }
 
@@ -2290,17 +2291,39 @@ button.accordion {
         padding-right: 0;
         margin: 0;
         width: 100%;
-        top: 0;      
-        
+        top: 0;
+        right: 2%;      
+        background-color: var(--secondary-colour);
+        border-radius: 24px;
     }
 
     nav ul li {
         text-align: center;
         display: inline-block;
-        padding-right: 25px;
-        padding-left: 25px;
+        padding: 8px 24px 8px 24px;
         margin: 0;
-        width: auto;        
+        width: auto;
+        font-family: var(--secondary-font);
+    }
+
+    nav ul li a {
+        color: var(--black-colour);
+        background-color: inherit;
+        text-align: center;
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 1.2em; 
+        padding: 0;
+    }
+
+    .home ul li a {
+        color: var(--black-colour);
+    }
+
+    nav ul li a:hover {
+        background-color: inherit;
+        color: var(--highlight-colour);
+    
     }
 
     .hover-fill {
@@ -2381,25 +2404,6 @@ button.accordion {
         transform: translateX(0);
         border-radius: var(--border-radius);
       }
-
-    nav ul li a {
-        color: var(--primary-colour);
-        background-color: inherit;
-        text-align: center;
-        margin-bottom: 0;
-        font-weight: 500;
-        font-size: 1.2em; 
-        padding: 0;
-    }
-
-    .home ul li a {
-        color: var(--black-colour);
-    }
-
-    nav ul li a:hover {
-        background-color: inherit;
-    
-    }
 
     #menuToggle {
         margin-right: 20px;
