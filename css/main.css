@@ -67,13 +67,13 @@ p {
 }
 
 h1 {
-    font-weight: 800;
+    font-weight: 600;
     font-size: 2rem;
 }
 
 h2 {
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 600;
     font-family: var(--primary-font), sans-serif;
     line-height: 2em;
     margin-bottom: 0;
@@ -2091,14 +2091,16 @@ button.accordion {
 
   #wcb #wcb_a {
     background: var(--black-colour) !important;
-    border-color: var(--black-colour) !important;
+    border-color: var(--white-colour) !important;
   }
 
   #wcb #wcb_g {
     color: var(--black-colour)!important;
     background: var(--white-colour) !important;
-    border-color: var(--black-colour) !important;
+    border-color: var(--white-colour) !important;
   }
+
+  #wcb #wcb_2 {color: var(--white-colour)!important;}
 
   .form-full {
     margin: 0 auto 0 auto;
@@ -2341,9 +2343,9 @@ button.accordion {
         width: 90%;
         transform: scaleX(0);
         height: 4px;
-        bottom: 5%;
+        bottom: 0;
+        z-index: -5;
         left: 5%;
-        background-color: var(--primary-colour);
         transform-origin: bottom right;
         transition: transform 0.25s ease-out;
       }
