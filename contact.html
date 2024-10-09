@@ -48,102 +48,20 @@
                 </div>
             </nav>
         </header>
-    <div class="container ">
-    <div class="block-half heroFade" id="top">    
-         <!-- Start Contact Section -->
-    <div class="form-container">
-        <h1>Get in touch.</h1>
-        
-        <div class="form-full" style="max-width:600px">
-            
-    
-            <script>var submitted=false;</script>
-            <script>var gotcha=false;</script>
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/contact-success.html';}"></iframe>
-
-
-        
-            <!-- Update the Google forms URL in action-->
-            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSegBs4l3_KSvl-D7-xHc40Z7hSep1XpaL4AJkdqUYEWkX8Qkg/formResponse" method="post" id="google_form" target="hidden_iframe" onsubmit="return validateForm()">
-                <div class="form-row">
-                    <label>Name *</label>
-                    <input class="input-field place" type="text" placeholder="Your name." id="name" required name="entry.2005620554">
-                </div>
-                <div class="form-row">
-                    <label>Email *</label>
-                    <input class="input-field place" type="text" placeholder="Your email." id="email" required name="entry.1045781291">
-                </div>
-                <div class="form-row">
-                    <label>Phone *</label>
-                    <input class="input-field place" type="text" placeholder="Your phone number." id="phone" required name="entry.1166974658">
-                </div>
-                <div class="form-row">
-                    <label>How can we help? *</label>
-                    <textarea class="input-field project place" rows="1" cols="26" placeholder="Describe your project: What makes it cool? What are the challenges? Include as much detail as possible." id="project" required name="entry.839337160"></textarea>
-                </div>               
-                <div>
-                    <button class="button button-arrow btn-submit" id="submit" type="submit" value="Submit">Send Message</button>
-                    <p id="response_message" style="margin-bottom: 2em;"></p>
-                </div>
-            </form>
+<div class="container">
+    <div class="block-half">
+        <div>
+            <h1>Get in touch</h1>
+         <div>
+            <p>If you have a project you're dying to get off the ground, we'd love to hear from you.</p>
+            <p>You can email us directly at <a href = "mailto:paprikacreativedesign@gmail.com" style="text-decoration: none; color: inherit; font-weight: 600;">paprikacreativedesign@gmail.com</a> or fill out the form below!</p>
+            <p>Please give as much detail as you can about your project, so we know how we can help you best.</p>
+           
         </div>
-        <p>If you're having trouble with the form, simply email <a href="mailto:paprikacreativedesign@gmail.com" style="text-decoration: underline;">paprikacreativedesign@gmail.com</a></p>
+        </div>        
     </div>
-
-    <script>
-        function validateName() {
-                var name = document.getElementById('name').value;
-                if(name.length == 0) {
-                  alert("Name can't be blank") ;
-                  return false;
-    
-                }
-                if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
-                  alert("Please enter your correct name") ;//Validation Message
-                  return false;
-                }
-                return true;
-              }
-    
-    
-             function validateEmail () {
-    
-              var email = document.getElementById('email').value;
-              if(email.length == 0) {
-                alert("Email can't be blank") ;//Validation Message
-                return false;
-    
-              }
-    
-              if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
-                alert("Please enter a correct email address") ;//Validation Message
-                return false;
-    
-              }
-    
-              return true;
-    
-            }
-    
-            function validateForm() {
-              if (!validateName() || !validateEmail()) {
-    
-                alert("Form not submitted");//Validation Message
-                return false;
-              }
-              
-                else {
-                submitted=true;
-                return true;
-              }
-
-
-            }
-
-            
-    </script>
-
-<!-- End Contact Section -->
+    <div class="block-full heroFade" id="top">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSegBs4l3_KSvl-D7-xHc40Z7hSep1XpaL4AJkdqUYEWkX8Qkg/viewform?embedded=true" width="640" height="824" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>    
     </div>
    
     <div class="footer scroll-reveal fadeIn">
