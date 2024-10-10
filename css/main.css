@@ -1400,6 +1400,8 @@ p.quote {
     background-color: var(--highlight-colour);
 }
 
+.category.transparent{background-color: none!important;}
+
 .case-study-container {
     clip-path: inset(5rem);
     transition: clip-path 1s ease 0s;
