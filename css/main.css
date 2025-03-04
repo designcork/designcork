@@ -1239,17 +1239,11 @@ max-height: 500px;
 
 }
 
-#intro-home p {
-    font-size: 1.8em;
-}
+.intro-home {display: none;}
 
-.testimonial-holder {
-    position: relative;
-}
+.testimonial-holder {position: relative;}
 
-p.quote {
-    font-size: 2em;
-}
+p.quote {font-size: 2em;}
 
 .quote::before{
     content: '“';
@@ -2180,6 +2174,9 @@ button.accordion {
     .hide-desktop {
         display: none;
     }
+
+    .intro-home { p font-size: 1.8em; display: block;}
+    
 
     .show-mobile {
         display: block;
