@@ -36,6 +36,10 @@
     --pink: #dc9f9d;
   }
 
+  ::selection {
+    background: var(--secondary-colour);
+  }
+
 html {
     margin: 0;
     max-width: 3000px;
@@ -70,7 +74,7 @@ a img {
 
 p {
     font-size: 1rem;
-    line-height: 1em;
+    line-height: 1.2em;
     font-weight: 500;
     font-family: var(--secondary-font), sans-serif;
 }
