@@ -16,15 +16,24 @@
 
 :root {
     --primary-colour: #181A18;
-    --secondary-colour: #FFC52B;
-    --highlight-colour: #B52B0B;
-    --highlight-colour-2: #7DCE82;
+    --secondary-colour: var(--yellow);
+    --highlight-colour: var(--red);
+    --highlight-colour-2: var(--green);
     --white-colour: #FBFAF5;
     --black-colour: #181A18;
     --primary-font: 'RL Madena';
     --primary-font-italic: 'Alegreya', italic;
     --secondary-font: 'Karla', sans-serif;
     --border-radius: 10px;
+    --green: #7DCE82;
+    --yellow: #FFC52B;
+    --yellow-alt: #ffe9ad;
+    --yellow-pale: #ffe9ad;
+    --red: #B52B0B;
+    --blue: #323f61;
+    --blue-light: #75cfe0;
+    --orange: #f59820;
+    --pink: #dc9f9d;
   }
 
 html {
@@ -75,13 +84,13 @@ h2 {
     font-size: 2rem;
     font-weight: 500;
     font-family: var(--primary-font), sans-serif;
-    line-height: 2em;
+    line-height: 1.2em;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
 .accordion h2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 h3 {
@@ -128,14 +137,14 @@ ul {
 .logo-box {
     max-width: 100%;
     margin-top: 10px;
-    z-index: 10;
-    left: 8%;
+    z-index: 10;    
     overflow: visible;
 }
 
 .logo-box-show {
     opacity: 1;
     transition: 400ms ease-in-out;
+    margin-left: .2em;
 }
 
 .mobile-nav>.logo-box-show {
@@ -272,7 +281,7 @@ header {
   #menuToggle input:checked ~ span.toggle-1
   {
     opacity: 1;
-    background: var(--white-colour);
+    background: var(--black-colour);
   }
   
   #menuToggle input:checked ~ span.toggle-text
@@ -290,12 +299,12 @@ header {
     background: none;
     transition: all 1s cubic-bezier(0.23, 1, 0.32, 1); 
     transition-delay: .1s;
-    color: var(--white-colour);
+    color: var(--black-colour);
   }
 
   #menuToggle input:checked ~ span.toggle-2
   {
-    background-color: var(--white-colour);
+    background-color: var(--black-colour);
   }
 
   #menuToggle input:checked ~ .hide-mobile
@@ -338,11 +347,11 @@ header {
   }
 
   .light-color#menuToggle span {
-    background: var(--white-colour) !important;
+    background: var(--black-colour) !important;
   }
 
   .light-color#menuToggle span.toggle-text {
-    color: var(--white-colour);
+    color: var(--black-colour);
     background-color: transparent !important;
   }
 
@@ -362,8 +371,8 @@ position: relative;
     right: 0;
     top: 0;
     bottom: 0;
-    background: var(--black-colour);
-    color: var(--white-colour);
+    background: var(--yellow);
+    color: var(--black-colour);
     z-index: 7;
     text-align: left;
     padding-top: 100px;
@@ -579,7 +588,7 @@ button.button {
     content: '';
     -webkit-mask: url(/images/arrow-small-light-blue.svg) no-repeat 50% 50%;
     mask: url(/images/arrow-small-light-blue.svg) no-repeat 50% 50%;
-    background-color: var(--white-colour);
+    background-color: var(--black-colour);
       display: inline-block;
       width: 14px;
       height: 14px;
@@ -601,6 +610,7 @@ button.button {
 }
 
 .white.button-arrow::after {background-color: var(--white-colour);}
+.white.button-arrow:hover::after {background-color: var(--black-colour);}
 .red.button-arrow::after {background-color: var(--white-colour);}
 
 .button-white.button-arrow::after {
@@ -664,7 +674,7 @@ button.button {
     content: '';
     -webkit-mask: url(/images/outside-link-blue.svg) no-repeat 50% 50%;
     mask: url(/images/outside-link-blue.svg) no-repeat 50% 50%;
-    background-color: var(--white-colour);
+    background-color: var(--black-colour);
       display: inline-block;
       width: 14px;
       height: 14px;
@@ -1402,6 +1412,15 @@ p.quote {
 
 .category.transparent{background-color: none!important;}
 
+.green {background-color: var(--green);}
+.red {background-color: var(--red);}
+.blue {background-color: var(--blue);}
+.blue-light {background-color: var(--blue-light);}
+.yellow {background-color: var(--yellow);}
+.yellow-pale {background-color: var(--yellow-pale);}
+.orange {background-color: var(--orange);}
+.pink {background-color: var(--pink);}
+
 .case-study-container {
     clip-path: inset(5rem);
     transition: clip-path 1s ease 0s;
@@ -1900,7 +1919,8 @@ a.card-a:hover > .card img {
 
 h2.subtitle {
     font-size: 1.2rem;
-
+    line-height: .2rem;
+    margin-bottom: 0;
 }
 
 
@@ -2324,7 +2344,7 @@ button.accordion {
 
     nav ul li a:hover {
         background-color: inherit;
-        color: var(--highlight-colour);
+        color: var(--white-colour);
     
     }
 
@@ -2510,6 +2530,10 @@ button.accordion {
     }
 
     .gradient-T-B#home-gradient {display: block;}
+
+    #book-cover.container-short {
+        max-width: 1200px;
+    }
 
 }
 
