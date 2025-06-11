@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/fadein.css">
         <link rel="stylesheet" href="css/magnific-popup.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <meta name="site_name" property="og:site_name" content="Paprika Creative">
         <meta property="og:title" content="Book Design | Ireland | Cork | Paprika Creative">
         <meta name="description" content="Book design and book cover design in Cork and Ireland. Paprika is an Irish design agency based in Cork, Ireland, specialising in web design, brand identity, and brand design.">
@@ -40,8 +39,7 @@
                 
 
                 <ul class="show-desktop hide-mobile" id="nav">
-                    <li><a href="/web-design-ireland.html" class="hover-underline">web design</a></li>                    
-                    <li><a href="/brand-design-Ireland.html" class="hover-underline">brand design</a></li>
+                    <li><a href="/web-design-ireland.html" class="hover-underline">web design</a></li>      
                     <li><a href="/book-design-ireland.html" class="hover-underline">book design</a></li>
                     <li><a href="/contact.html" class="hover-underline">contact</a></li>
                 </ul>
@@ -55,67 +53,89 @@
             <p>Hi! My name is Cian. I'm an Irish book designer, based in Cork.</p>
             <p>I work with authors and publishers around Ireland and the world, to help them on their book's journey.</p>
             <p>Want to start your book cover design project?</p>
-            <a href="/contact.html" class="button button-arrow white button-text center">Get in touch</a> 
+            <div class="button-holder">
+                <a href="/contact.html" class="button button-arrow button-white white button-text center">Get in touch</a> 
+                <a href="#testimonials" class="button button-arrow button-white white button-text center smoothscroll">Read testimonials</a> 
+            </div>
+            
         </div>        
     </div>
 
-    <div class="container-short">
-        <div class="swiper-slide heroFadeDelayed yellow-pale rounded">
+    
+
+    <div class="container container-short" id="book-cover" style="text-align: center;">
+        <div class="container-short light-background" style="text-align: center;">
+            <h2 class="heroFadeDelayed">Portfolio</h2>
+        </div>
+        <div class="popup-gallery one-two">  
+            <a class="popup-gallery-item yellow heroFadeDelayed" href="/images/book-design-Ireland-Osteoporosis.webp"><img src="/images/book-design-Ireland-Osteoporosis.webp" alt="Osteoporosis, Irish nonfiction book cover designer, non-fiction book designer Irish"></a>       
+            <a class="popup-gallery-item yellow-pale heroFadeDelayed" href="/images/book-design-Ireland-This_Time_Mockup.webp"><img src="/images/book-design-Ireland-This_Time_Mockup.webp" alt="Clodagh Caulfield This Time, Ireland children's novel book cover designer, book designer Irish"></a> 
+            <a class="popup-gallery-item blue-light fadeUp" href="/images/book-design-Ireland-Louis_and_Puffin_Mockup.webp"><img src="/images/book-design-Ireland-Louis_and_Puffin_Mockup.webp" alt="Louis and the Puffin, Irish children's comic book cover designer, book designer Ireland"></a> 
+            <a class="popup-gallery-item pink fadeUp" href="/images/book-design-Ireland-Remote_Work_Mockup.webp"><img src="/images/book-design-Ireland-Remote_Work_Mockup.webp" alt="Irish non-fiction non fiction book cover designer, book designer Ireland"></a>    
+            <a class="popup-gallery-item orange fadeUp" href="/images/book-design-Ireland-Thriller_Lighthouse_Cover_mockup_transparent.webp"><img src="/images/book-design-Ireland-Thriller_Lighthouse_Cover_mockup_transparent.webp" alt="Ireland novel book cover designer, book designer Irish"></a>
+            <a class="popup-gallery-item yellow fadeUp" href="/images/book-design-Ireland-Music_Master_Cover_Mockup_transparent.webp"><img src="/images/book-design-Ireland-Music_Master_Cover_Mockup_transparent.webp" alt="Irish book cover design, book designer Ireland"></a>
+            <a class="popup-gallery-item blue fadeUp" href="/images/book-design-Ireland-Detective_Cover_Mockup_transparent.webp"><img src="/images/book-design-Ireland-Detective_Cover_Mockup_transparent.webp" alt="Irish book cover design, book designer Ireland"></a>
+            <a class="popup-gallery-item yellow-pale fadeUp" href="/images/book-design-Fish_Cover_Mockup_yellow.webp"><img src="/images/book-design-Fish_Cover_Mockup_yellow.webp" alt="Ireland book cover design, Ireland book designer Irish" loading="lazy"></a>
+        </div>
+    </div>
+
+    <div class="container-short" id="testimonials">
+        <div class="container-short light-background" style="text-align: center;">
+            <h2 class="fadeUp">Testimonials</h2>
+        </div>
+        <div class="swiper-slide fadeUp yellow-pale rounded">
             <div class="swiper-card carousel-text">            
                 <div class="image-holder case-study"><img src="/images/book-design-Ireland-This_Time_Mockup.webp" alt="Clodagh Caulfield This Time, Cork children's novel book cover designer, book designer Cork"></div>
                 <div class="category yellow">Case Study</div>
-                <h2><i>This Time</i> by Clodagh Caulfield</h2>
-                <p>I found Cian at Paprika when I was looking for someone to design a children’s book cover. He quickly worked up four options for me to choose from and he
+                <h3><i>This Time</i> by Clodagh Caulfield</h3>
+                <p class="quote-mark-start">I found Cian at Paprika when I was looking for someone to design a children’s book cover. He quickly worked up four options for me to choose from and he
                     didn’t get precious when I asked for a couple of finicky changes. Actually, he took on a lot
                     more that he originally signed up for because Cian is one of those people: positive,
                     interested and very competent. He researched options around the project and came up
                     with recommendations. He did the formatting. He made practical suggestions on font
                     options and paper choice.</p>            
-                <p>I trusted his judgement and when I finally got a copy of my paperback into my hands, it was clear I hadn't been wrong. I would recommend Cian highly
+                <p class="quote-mark-end">I trusted his judgement and when I finally got a copy of my paperback into my hands, it was clear I hadn't been wrong. I would recommend Cian highly
                     for any creative project you have in mind.</p>
                 <p class="subtitle">Clodagh Caulfield, Author - “This Time”</p>
                 <div class="category green">available now</div><p> On Amazon: <a href="https://www.amazon.co.uk/This-Time-Clodagh-Caulfield/dp/B0DX44GLKD" class="underline outside-link"><i>This Time</i></a></p>
             </div>            
         </div>
         <br>
-        <div class="swiper-slide heroFadeDelayed blue-light rounded">
+        <div class="swiper-slide fadeUp yellow-pale rounded">
+            <div class="swiper-card carousel-text">            
+                <div class="image-holder case-study"><img src="/images/book-design-Ireland-Osteoporosis.webp" alt="Ireland non-fiction non fiction book cover designer, book designer Irish"></div>
+                <div class="category yellow">Case Study</div>
+                <h3><i>Osteoporosis After 40</i> by Erin West</h3>
+                <p class="quote-mark-start">Thank you, Paprika Creative, for making our collaboration so effortless. From concept to finished product, it was a pleasure to work with you.</p>
+                <p class="quote-mark-end">Our book cover design is exactly what we were aiming for. Efficient and professional throughout. We look forward to collaborating with you again.</p>
+               <p class="subtitle">Nautica Blue Publishing</p>
+               <div class="category green">available now</div><p> On Amazon: <a href="https://www.amazon.com/Osteoporosis-After-Empowering-Reclaim-Health/dp/1068631902" class="underline outside-link"><i>Osteoporosis After 40</i></a></p>
+            </div>            
+        </div>
+        <br>
+        <div class="swiper-slide fadeUp yellow-pale rounded">
             <div class="swiper-card carousel-text">            
                 <div class="image-holder case-study"><img src="/images/book-design-Ireland-Louis_and_Puffin_Mockup.webp" alt="Cork children's novel book cover designer, book designer Cork"></div>
                 <div class="category yellow">Case Study</div>
-                <h2><i>Louis and the Puffin</i> by Kelli Franco</h2>
-                <p>Thank you Cian for the amazing work bringing my son’s book to life. This is a very special project for me and I am grateful to have come across Cian’s website.</p>
-                <p>His work was fast, very well explained at each step, tailored to our needs/availability, and perfect finished product.
+                <h3><i>Louis and the Puffin</i> by Kelli Franco</h3>
+                <p class="quote-mark-start">Thank you Cian for the amazing work bringing my son’s book to life. This is a very special project for me and I am grateful to have come across Cian’s website.</p>
+                <p class="quote-mark-end">His work was fast, very well explained at each step, tailored to our needs/availability, and perfect finished product.
                     Cian even went beyond and helped us find a platform to print it. I 100% recommend.</p>
                <p class="subtitle">Kelli Franco, Author - “Louis and the Puffin”</p>
             </div>            
         </div>
     </div>
 
-    <div class="container container-short" id="book-cover" style="text-align: center;">
-        <div class="container-short light-background" style="text-align: center;">
-            <h2 class="heroFadeDelayed">Portfolio</h2>
-        </div>
-        <div class="popup-gallery one-two">        
-            <a class="popup-gallery-item yellow-pale heroFadeDelayed" href="/images/book-design-Ireland-This_Time_Mockup.webp"><img src="/images/book-design-Ireland-This_Time_Mockup.webp" alt="Clodagh Caulfield This Time, Ireland children's novel book cover designer, book designer Irish"></a> 
-            <a class="popup-gallery-item blue-light heroFadeDelayed" href="/images/book-design-Ireland-Louis_and_Puffin_Mockup.webp"><img src="/images/book-design-Ireland-Louis_and_Puffin_Mockup.webp" alt="Louis and the Puffin, Irish children's comic book cover designer, book designer Ireland"></a> 
-            <a class="popup-gallery-item pink heroFadeDelayed" href="/images/book-design-Ireland-Remote_Work_Mockup.webp"><img src="/images/book-design-Ireland-Remote_Work_Mockup.webp" alt="Irish non-fiction non fiction book cover designer, book designer Ireland"></a>    
-            <a class="popup-gallery-item orange heroFadeDelayed" href="/images/book-design-Ireland-Thriller_Lighthouse_Cover_mockup_transparent.webp"><img src="/images/book-design-Ireland-Thriller_Lighthouse_Cover_mockup_transparent.webp" alt="Ireland novel book cover designer, book designer Irish"></a>
-            <a class="popup-gallery-item yellow heroFadeDelayed" href="/images/book-design-Ireland-Music_Master_Cover_Mockup_transparent.webp"><img src="/images/book-design-Ireland-Music_Master_Cover_Mockup_transparent.webp" alt="Irish book cover design, book designer Ireland"></a>
-            <a class="popup-gallery-item blue fadeUp" href="/images/book-design-Ireland-Detective_Cover_Mockup_transparent.webp"><img src="/images/book-design-Ireland-Detective_Cover_Mockup_transparent.webp" alt="Irish book cover design, book designer Ireland"></a>
-            <a class="popup-gallery-item yellow-pale fadeUp" href="/images/book-design-Fish_Cover_Mockup_yellow.webp"><img src="/images/book-design-Fish_Cover_Mockup_yellow.webp" alt="Ireland book cover design, Ireland book designer Irish" loading="lazy"></a>
-        </div>
-    </div>
-
-    <div class="block-full block-yellow dark-background container" id="brand">
+    <div class="block-full dark-background container container-short">
         <div class="grid-two">
-            <div>
+            <div class="container-short">
                 <h2 class="fadeRight"><span>Irish</span> Book Designer</h2>
-                <p class="fadeUpDelayed">If you're looking for a book designer in Ireland, look no further.</p>
+                <p class="fadeUpDelayed">If you're looking for a book designer in Ireland, I'd love to chat.</p>
                 <p class="fadeUpDelayed">Book cover design for all genres, including fiction and non-fiction.</p>
                 <p class="fadeUpDelayed">Special packages available for emerging authors in Ireland.</p>
-                <a href="#contact" class="button button-arrow button-white smoothscroll fadeRight">Get started.</a> 
+                <a href="#contact" class="button button-arrow button-white smoothscroll fadeRight">Get started</a> 
             </div>
-            <div class="fadeLeft">
+            <div class="fadeLeft container-short">
                 <img class="rounded" src="/images/book-design-mockup-Detective_01.webp" style="object-fit: cover; height: 100%;" alt="Irish book cover design, book designer Ireland" loading="lazy">
             </div>
         </div>
@@ -130,7 +150,7 @@
                     to go with a professional book designer based in Ireland.</p>
                 <p>Costs can vary depending on genre and other factors. However, I like to be as flexible as I can, especially with new and emerging Irish authors.</p>
                 <p>Get in touch for a chat, we'd love to help you out with your book cover design!</p>
-                <a href="/contact.html" class="button button-yellow button-arrow">Get in touch.</a> 
+                <a href="/contact.html" class="button button-yellow button-arrow">Get in touch</a> 
             </div>
         </div>
       
@@ -141,7 +161,7 @@
                 To design a cover for your book, it's a good idea to go with a professional designer.</p>
                 <p>I provide professional book cover design for Irish authors, with a friendly, no-pressure environment. I want to design the perfect cover for your book! Not sure how to get started with your book cover design in Ireland? Just ask, I'd be happy to have a chat!
             </p>
-            <a href="/contact.html" class="button button-yellow button-arrow">Let's chat.</a>
+            <a href="/contact.html" class="button button-yellow button-arrow">Let's chat</a>
             </div>
         </div>
       
@@ -149,7 +169,7 @@
             <button class="accordion"><h2>Digital Marketing</h2></button>
             <div class="accordion-content">
                 <p>Once your book is designed and printed, the next step is getting your book in front of readers. I can help create a digital marketing strategy for your book launch with high quality media to stand out from the crowd. I provide digital marketing services to businesses and organisations in Ireland.</p>
-                <a href="/contact.html" class="button button-yellow button-arrow">Get started.</a>
+                <a href="/contact.html" class="button button-yellow button-arrow">Get started</a>
             </div>
         </div>
         </div>
@@ -162,20 +182,18 @@
             <h2 class="fadeUp"><span>Get in Touch</span></h2>
             <p class="fadeUpDelayed">Have a book design or book cover design project in Ireland?</p>
                 <p class="fadeUpDelayed">Let's have a chat to get started.</p>
-                <a href="/contact.html" class="button button-white button-arrow ">Get in touch.</a> 
+                <a href="/contact.html" class="button button-white button-arrow ">Get in touch</a> 
         </div>      
     </section>
     
     
-    <div class="footer">
-            
+    <div class="footer">            
         <div class="footer-container">
             <a href="#top" class="ribbon-to-top heroFade" aria-label="Back to top" title="Back to top"></a>
             <div class="footer-grid">
                 <div><h2><a href="/index.html">Home</a></h2></div>
                 <div><h2><a href="/web-design-ireland.html">Web Design</a></h2>
                     <a href="/web-design-cork.html">Web Design Cork</a></div>
-                <div><h2><a href="/brand-design-Ireland.html" >Brand Design</a></h2></div>
                 <div><h2><a href="/book-design-ireland.html">Book Design</a></h2>
                     <a href="/book-design-cork.html">Book Design Cork</a></div>
                 <div><h2><a href="/contact.html" class="">Contact</a></h2></div>
@@ -185,10 +203,11 @@
             <p>©2025 All rights reserved.</p>
             <p>Designed with <span class="icon icon-heart icon-footer"></span> by Paprika Creative</p>
         </div>
-</div>
+    </div>
     
 
     <script src="js/init.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/fadein.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
 
