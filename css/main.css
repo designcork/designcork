@@ -1367,7 +1367,7 @@ p.quote {font-size: 1.6em !important;}
 
 .services.grid-two{
     width: 100%;
-    column-gap: 8px;
+    gap: 16px;
 }
 
 .grid-two img {
