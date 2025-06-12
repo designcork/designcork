@@ -463,7 +463,6 @@ nav ul li a {
     height: 100vh;
     scroll-behavior: smooth;
     transition: scroll-behaviour 20s;
-    background-color: var(--white-colour);
 }
 
 
@@ -473,7 +472,6 @@ nav ul li a {
   flex: none;
   position: relative;
   scroll-snap-stop: always;
-  background-color: var(--white-colour);
   scroll-snap-stop: always;
 }
 
@@ -501,11 +499,12 @@ a img {
 }
 
 .button-holder {
-    text-align: center;
-    cursor: pointer;
+    box-sizing: border-box;
+     display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
 }
-
-.button-holder .button {margin: 4px;max-width: 100vw !important; padding: 1em;}
 
 .button-holder.home {
     display: flex;
